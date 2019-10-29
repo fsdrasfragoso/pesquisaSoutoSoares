@@ -15,11 +15,6 @@ $tratamentoAgua = $_POST['tratamentoAgua'];
 $coletaEsgoto = $_POST['coletaEsgoto'];
 $destinoLixo = $_POST['destinoLixo'];
 $segPublica = $_POST['segPublica'];
-$numeroPessoas = $_POST['numeroPessoas'];
-$constFamiliar = $_POST['constFamiliar'];
-$rendaFamilia = $_POST['rendaFamilia'];
-$contribRendaFamiliar = $_POST['contribRendaFamiliar'];
-
 
 $lista0 = '';
 if(!empty($_POST['tipoConstr'])){
@@ -71,7 +66,7 @@ if(!empty($_POST['destinoLixo'])){
 
 
 
-$sql = "insert into aluno(data, responsavel, zona, bairro, comunidade, tipoImovel, regOcupImovel, tipoConstr, abastAgua, tratamentoAgua, coletaEsgoto, destinoLixo, segPublica, numeroPessoas, constFamiliar, rendaFamilia, contribRendaFamiliar) values('$data','$responsavel', '$zona','$bairro','$comunidade', '$tipoImovel', '$regOcupImovel', '$tipoConstr', '$abastAgua', '$tratamentoAgua', '$coletaEsgoto', '$destinoLixo', '$segPublica', '$numeroPessoas', '$constFamiliar', '$rendaFamilia', '$contribRendaFamiliar')";
+$sql = "insert into aluno(data, responsavel, zona, bairro, comunidade, tipoImovel, regOcupImovel, tipoConstr, abastAgua, tratamentoAgua, coletaEsgoto, destinoLixo, segPublica) values('$data','$responsavel', '$zona','$bairro','$comunidade', '$tipoImovel', '$regOcupImovel', '$tipoConstr', '$abastAgua', '$tratamentoAgua', '$coletaEsgoto', '$destinoLixo', '$segPublica')";
 $count = $con->exec($sql);
 
 echo "<p>$count registro foi concluido</p><br><a href='index.php'>Novo cadastro</a>"
