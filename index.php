@@ -105,10 +105,10 @@ $date = date('d-m-Y H:i');
 							<option value="Barriguda">11 - Barriguda</option>
 							<option value="Boa Sorte">12 - Boa Sorte</option>
 							<option value="Boa Vista">13 - Boa Vista</option>
-							<option value="Brejo da Mangabeira">14 - Brejo da Mangabeira</option>
+							
 							<option value="Cabano">15 - Cabano</option>
-							<option value="Cabeceira 1">16 - Cabeceira 1</option>
-							<option value="Cabeceira 2">17 - Cabeceira 2</option>
+							<option value="Cabaceira 1">16 - Cabaceira 1</option>
+							<option value="Cabaceira 2">17 - Cabaceira 2</option>
 							<option value="Cajazeiras">18 - Cajazeiras</option>
 							<option value="Campo Alegre">19 - Campo Alegre</option>
 							<option value="Campo de Fora">20 - Campo de Fora</option>
@@ -169,51 +169,360 @@ $date = date('d-m-Y H:i');
 							<div class="form-check">
 								<input class="form-check-input" type="radio" name="tipoImovel" id="tipoImovel2" value="Comodos, Quitinete, Barraco">
 								<label class="form-check-label" for="tipoImovel2">
-									2. Comodos, Quitinete, Barraco.
+									2. Comodos, Quitinete, Barraco
 								</label>
 							</div>
 							<div class="form-check">
 								<input class="form-check-input" type="radio" name="tipoImovel" id="tipoImovel3" value="outro">
 								<label class="form-check-label" for="tipoImovel3">
-									3. Outro.
+									3. Outro
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="tipoImovel" id="tipoImovel4" value="Sem Resposta">
+								<label class="form-check-label" for="tipoImovel4">
+									4. Sem Resposta
 								</label>
 							</div>
 
 
 						</div>
-						<div class="form-group col-md-3">
-							<p><b>Quest 2 </b></p>
-						</div>
-						<div class="form-group col-md-3">
-							<p><b>Quest 3 </b></p>
-						</div>
-						<div class="form-group col-md-3">
-							<p><b>Quest 4 </b></p>
-						</div>
 						
-						
+						<div class="form-group col-md-3">
+							<label>2 - Regime de ocupacao do Imovel.</label>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="regOcupImovel" id="regOcupImovel1" value="Propria" checked>
+								<label class="form-check-label" for="regOcupImovel1">
+									1. Propria
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="regOcupImovel" id="regOcupImovel2" value="Alugada">
+								<label class="form-check-label" for="regOcupImovel2">
+									2. Alugada
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="regOcupImovel" id="regOcupImovel3" value="Cedido">
+								<label class="form-check-label" for="regOcupImovel3">
+									3. Cedido
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="regOcupImovel" id="regOcupImovel4" value="Outro">
+								<label class="form-check-label" for="regOcupImovel4">
+									4. Outro
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="regOcupImovel" id="regOcupImovel5" value="Sem Resposta">
+								<label class="form-check-label" for="regOcupImovel5">
+									5. Sem Resposta
+								</label>
+							</div>
+
+
+
+						</div>
+
+						<!-- Inicio Questao 3 -->						
+						<div class="form-group col-md-3">
+							<label>3 - Tipo de Construcao.</label>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="tipoConstr[]"  value="Alvenaria / Tijolo" checked>
+								<label class="form-check-label" >
+									1. Alvenaria / Tijolo
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="tipoConstr[]"  value="Madeira / Taco">
+								<label class="form-check-label" >
+									2. Madeira / Taco
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="tipoConstr[]"  value="Taipa">
+								<label class="form-check-label" >
+									3. Taipa
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="tipoConstr[]"  value="Casa de enchimento">
+								<label class="form-check-label" >
+									4. Casa de enchimento
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="tipoConstr[]"  value="Aproveitado">
+								<label class="form-check-label" >
+									5. Aproveitado
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="tipoConstr[]"  value="Adobe">
+								<label class="form-check-label" >
+									6. Adobe
+								</label>
+							</div>
+
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="tipoConstr[]"  value="Outro">
+								<label class="form-check-label" >
+									7. Outro
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="tipoConstr[]"  value="Sem Resposta">
+								<label class="form-check-label" >
+									8. Sem Resposta
+								</label>
+							</div>
+
+
+						</div>
+
+						<!-- Final questao 3 -->
+						<!-- inicio questao 4 -->
+						<div class="form-group col-md-3">
+							<label>4 - Fonte de abastecimento de agua:</label>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="abastAgua[]"  value="Rede geral" checked>
+								<label class="form-check-label" >
+									1. Rede geral
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="abastAgua[]"  value="Poç" >
+								<label class="form-check-label" >
+									2. Poço
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="abastAgua[]"  value="Cisterna" >
+								<label class="form-check-label" >
+									3. Cisterna
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="abastAgua[]"  value="Nascente / Mina" >
+								<label class="form-check-label" >
+									4. Nascente / Mina
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="abastAgua[]"  value="Rio / Corrego / Lagoa" >
+								<label class="form-check-label" >
+									5. Rio / Corrego / Lagoa
+								</label>
+							</div>
+
+							<div class="form-check">
+
+								<input class="form-check-input" type="checkbox" name="abastAgua[]"  value="Outro" >
+								<label class="form-check-label" >
+									6. Outro
+								</label>
+							</div>
+							<div class="form-check">
+
+								<input class="form-check-input" type="checkbox" name="abastAgua[]"  value="Sem Resposta" >
+								<label class="form-check-label" >
+									7. Sem Resposta
+								</label>
+							</div>
+	
+		
+						</div>
+												
+						<!-- final questao 4 -->						
 
 					</div>
-						</div>
-						<div class="form-group col-md-3">
-							<p><b>Quest 5 </b></p>
-						</div>
-						<div class="form-group col-md-3">
-							<p><b>Quest 6 </b></p>
-						</div>
-						<div class="form-group col-md-3">
-							<p><b>Quest 7 </b></p>
-						</div>
-						<div class="form-group col-md-3">
-							<p><b>Quest 8 </b></p>
+		</div>						
+
+				
+				<div class = "form-row">
+					<div class = "form-group col-md-4">
+						<label>5 - Tratamento de agua para beber:</label>
+						<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="tratamentoAgua[]"  value="Filtro" checked>
+								<label class="form-check-label" >
+									1. Filtro
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="tratamentoAgua[]"  value="Fervura" >
+								<label class="form-check-label" >
+									2. Fervura
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="tratamentoAgua[]"  value="Cloracao" >
+								<label class="form-check-label" >
+									3. Cloracao
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="tratamentoAgua[]"  value="Sem Tratamento" >
+								<label class="form-check-label" >
+									4. Sem Tratamento
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="tratamentoAgua[]"  value="Outro" >
+								<label class="form-check-label" >
+									5. Outro
+								</label>
+							</div>
+
+							<div class="form-check">
+
+								<input class="form-check-input" type="checkbox" name="tratamentoAgua[]"  value="Sem Resposta" >
+								<label class="form-check-label" >
+									6. Sem Resposta
+								</label>
+							</div>
+
+						
+					
+					</div>
+					<div class = "form-group col-md-4">
+						<label>6 - Coleta de esgoto sanitario:</label>
+						<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="coletaEsgoto[]"  value="Rede Geral" checked>
+								<label class="form-check-label" >
+									1. Rede Geral
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="coletaEsgoto[]"  value="Fossa rudimentar" >
+								<label class="form-check-label" >
+									2. Fossa rudimentar
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="coletaEsgoto[]"  value="Lancamento direto em curso dagua / Vala" >
+								<label class="form-check-label" >
+									3. Lancamento direto em curso dagua / Vala
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="coletaEsgoto[]"  value="Canalizado para o fundo do quintal" >
+								<label class="form-check-label" >
+									4. Canalizado para o fundo do quintal
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="coletaEsgoto[]"  value="Lancado a ceu aberto" >
+								<label class="form-check-label" >
+									5. Lancado a ceu aberto
+								</label>
+							</div>
+
+							<div class="form-check">
+
+								<input class="form-check-input" type="checkbox" name="coletaEsgoto[]"  value="Sem Resposta" >
+								<label class="form-check-label" >
+									6. Sem Resposta
+								</label>
+							</div>
+
+						
+					
+					</div>
+					
+					<div class = "form-group col-md-4">
+						<label>7 - Destino do Lixo:</label>
+						<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="destinoLixo[]"  value="Coleta publica" checked>
+								<label class="form-check-label" >
+									1. Coleta Publica
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="destinoLixo[]"  value="Queimado" >
+								<label class="form-check-label" >
+									2. queimado
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="destinoLixo[]"  value="Enterrado" >
+								<label class="form-check-label" >
+									3. Enterrado
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="destinoLixo[]"  value="Lancado no fundo d quintal" >
+								<label class="form-check-label" >
+									4. Lancado no fundo do quintal
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="destinoLixo[]"  value="Lancado em terreno baldio" >
+								<label class="form-check-label" >
+									5. Lancado em terreno baldio
+								</label>
+							</div>
+
+							<div class="form-check">
+
+								<input class="form-check-input" type="checkbox" name="destinoLixo[]"  value="Lancado em curso dagua" >
+								<label class="form-check-label" >
+									6. Lancado em curso dagua
+								</label>
+							</div>
+							<div class="form-check">
+
+								<input class="form-check-input" type="checkbox" name="destinoLixo[]"  value="Sem Resposta" >
+								<label class="form-check-label" >
+									7. Sem Resposta
+								</label>
+							</div>
+
+							
+
 						</div>
 
+					<div class="form-group col-md-3">
+							<label>8 - Como o(a) Sr(a) avalia a qualidade da seguranca publica no seu bairo?</label>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="segPublica" id="segPublica1" value="Otima" checked>
+								<label class="form-check-label" for="segPublica1">
+									1. Otima
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="segPublica" id="segPublica2" value="Boa">
+								<label class="form-check-label" for="segPublica2">
+									2. Boa
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="segPublica" id="segPublica3" value="Regular">
+								<label class="form-check-label" for="segPublica3">
+									3. Regular
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="segPublica" id="segPublica4" value="Ruim">
+								<label class="form-check-label" for="segPublica4">
+									4. Ruim
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="segPublica" id="segPublica5" value="Sem Resposta">
+								<label class="form-check-label" for="segPublica5">
+									5. Sem Resposta
+								</label>
+							</div>
+	
+					
+					</div>
 
+
+					
+			</div>
 
 				</div>
-				
-
-				
 				<div class = "form-row">
 					<div class="form-group col-md-12" align="center">
 					<button class="btn btn-default" type="submit" name="button">Enviar</button>
@@ -223,6 +532,7 @@ $date = date('d-m-Y H:i');
 				</form>
 			</div>
 		</div>
+	</div>
 		<div class="copyright" align="center">
 		<p>©2019 Formularios de pesquisa. All rights reserved | Design by <a href="http://www.netosales.com.br">NS informatica.</a> - (77)9 9122-2146.</p>
 
