@@ -152,14 +152,14 @@ $date = date('d-m-Y H:i');
 						</select>
 					</div>
 					<div class = "form-row">
-						<div class="form-group col-md-12">
-						<p><b>Perfil da Moradia - Questoes de 1 a 8</b></p>
+						<div class="form-group col-md-12 bg-primary text-white">
+						<h1><b>Perfil da Moradia - Questoes de 1 a 8</b></h1>
 						</div>
 
 					</div>
 					<div class = "form-row">
 						<div class="form-group col-md-3">
-							<label>1 - Tipo do Imovel.</label>
+							<span class = "label label-warning">1 - Tipo do Imovel.</span>
 							<div class="form-check">
 								<input class="form-check-input" type="radio" name="tipoImovel" id="tipoImovel1" value="casa" checked>
 								<label class="form-check-label" for="tipoImovel1">
@@ -189,7 +189,7 @@ $date = date('d-m-Y H:i');
 						</div>
 						
 						<div class="form-group col-md-3">
-							<label>2 - Regime de ocupacao do Imovel.</label>
+							<span class = "label label-warning">2 - Regime de ocupacao do Imovel.</span>
 							<div class="form-check">
 								<input class="form-check-input" type="radio" name="regOcupImovel" id="regOcupImovel1" value="Propria" checked>
 								<label class="form-check-label" for="regOcupImovel1">
@@ -227,7 +227,7 @@ $date = date('d-m-Y H:i');
 
 						<!-- Inicio Questao 3 -->						
 						<div class="form-group col-md-3">
-							<label>3 - Tipo de Construcao.</label>
+							<span class = "label label-warning"> 3 - Tipo de Construcao.</span>
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="tipoConstr[]"  value="Alvenaria / Tijolo" checked>
 								<label class="form-check-label" >
@@ -284,7 +284,7 @@ $date = date('d-m-Y H:i');
 						<!-- Final questao 3 -->
 						<!-- inicio questao 4 -->
 						<div class="form-group col-md-3">
-							<label>4 - Fonte de abastecimento de agua:</label>
+							<span class = "label label-warning">4 - Fonte de abastecimento de agua:</span>
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="abastAgua[]"  value="Rede geral" checked>
 								<label class="form-check-label" >
@@ -342,7 +342,7 @@ $date = date('d-m-Y H:i');
 				
 				<div class = "form-row">
 					<div class = "form-group col-md-4">
-						<label>5 - Tratamento de agua para beber:</label>
+						<span class = "label label-warning">5 - Tratamento de agua para beber:</span>
 						<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="tratamentoAgua[]"  value="Filtro" checked>
 								<label class="form-check-label" >
@@ -386,7 +386,7 @@ $date = date('d-m-Y H:i');
 					
 					</div>
 					<div class = "form-group col-md-4">
-						<label>6 - Coleta de esgoto sanitario:</label>
+						<span class = "label label-warning">6 - Coleta de esgoto sanitario:</span>
 						<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="coletaEsgoto[]"  value="Rede Geral" checked>
 								<label class="form-check-label" >
@@ -431,7 +431,7 @@ $date = date('d-m-Y H:i');
 					</div>
 					
 					<div class = "form-group col-md-4">
-						<label>7 - Destino do Lixo:</label>
+						<span class = "label label-warning">7 - Destino do Lixo:</span>
 						<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="destinoLixo[]"  value="Coleta publica" checked>
 								<label class="form-check-label" >
@@ -483,7 +483,7 @@ $date = date('d-m-Y H:i');
 						</div>
 
 					<div class="form-group col-md-3">
-							<label>8 - Como o(a) Sr(a) avalia a qualidade da seguranca publica no seu bairo?</label>
+						<span class = "label label-warning">8 - Como o(a) Sr(a) avalia a qualidade da seguranca publica no seu bairo?</span>
 							<div class="form-check">
 								<input class="form-check-input" type="radio" name="segPublica" id="segPublica1" value="Otima" checked>
 								<label class="form-check-label" for="segPublica1">
@@ -524,14 +524,14 @@ $date = date('d-m-Y H:i');
 
 			</div>
 			<div class = "form-row">
-						<div class="form-group col-md-12">
-						<p><b>Perfil da Familia - Questoes de 9 a 55</b></p>
+						<div class="form-group col-md-12 bg-primary text-white">
+						<h1><b>Perfil da Familia - Questoes de 9 a 12</b></h1>
 						</div>
 
 					</div>
 					<div class = "form-row">
 						<div class="form-group col-md-3">
-							<label>9 - Número de Pessoas residentes no domicílio.</label>
+							<span class = "label label-warning">9 - Número de Pessoas residentes no domicílio</span>
 							<div class="form-check">
 								<input class="form-check-input" type="radio" name="numeroPessoas" id="numeroPessoas1" value="1" checked>
 								<label class="form-check-label" for="numeroPessoas1">
@@ -619,8 +619,7 @@ $date = date('d-m-Y H:i');
 						</div>
 						
 						<div class="form-group col-md-3">
-							<label>10 - Constituição familiar.</label>
-							<div class="form-check">
+								<span class = "label label-warning">10 - Constituicao familiar</span>							<div class="form-check">
 								<input class="form-check-input" type="radio" name="constFamiliar" id="constFamiliar1" value="Pai, mãe e filho(s)" checked>
 								<label class="form-check-label" for="constFamiliar1">
 									1. Pai, mãe e filho(s)  
@@ -685,7 +684,7 @@ $date = date('d-m-Y H:i');
 
 						<!-- Inicio Questao 3 -->						
 						<div class="form-group col-md-3">
-							<label>11 - Qual é aproximadamente a renda total de sua família por mês?.</label>
+						<span class = "label label-warning">11 - Qual éa renda total de sua familia por mes</span>
 							
 							<div class="form-check">
 								<input class="form-check-input" type="radio" name="rendaFamilia" id="rendaFamilia1" value="Até 1 SM" checked>
@@ -735,7 +734,7 @@ $date = date('d-m-Y H:i');
 						<!-- Final questao 3 -->
 						<!-- inicio questao 4 -->
 						<div class="form-group col-md-3">
-							<label>12 - Quem contribui para a renda familiar?</label>
+							<span class = "label label-warning">12 - Quem contribui para a renda familiar?</span>
 							<div class="form-check">
 								<input class="form-check-input" type="radio" name="contribRendaFamiliar" id="contribRendaFamiliar1" value="Somente o Pai/Padrasto" checked>
 								<label class="form-check-label" for="constFamiliar1">
@@ -803,7 +802,37 @@ $date = date('d-m-Y H:i');
 						<!-- final questao 4 -->						
 
 					</div>
-		</div>						
+			<div class = "form-row">
+						<div class="form-group col-md-12 bg-primary text-white">
+						<h1><b>BENS DE CONSUMO - Questoes de 14 a 37</b></h1>
+						</div>
+
+			</div>
+			<div class = "form-row">
+						<div class="form-group col-md-12 bg-primary text-white">
+						<h1><b>Sobre os pais/responsaveis - Questoes de 38 a 55</b></h1>
+						</div>
+
+			</div>
+			<div class = "form-row">
+						<div class="form-group col-md-12 bg-primary text-white">
+						<h1><b>Criancas e adolescentes - Questoes de 56 a 75</b></h1>
+						</div>
+
+			</div>
+			<div class = "form-row">
+						<div class="form-group col-md-12 bg-primary text-white">
+						<h1><b>Outras informacoes e conhecimentos - Questoes de 76 a 100</b></h1>
+						</div>
+
+			</div>
+
+
+
+
+
+		</div>	
+								
 			<div class = "form-row">
 					<div class="form-group col-md-12" align="center">
 					<button class="btn btn-default" type="submit" name="button">Enviar</button>
