@@ -159,7 +159,7 @@ $date = date('d-m-Y H:i');
 					</div>
 					<div class = "form-row">
 						<div class="form-group col-md-3">
-							<span class = "label label-warning">1 - Tipo do Imóvel.</span>
+							<span class = "label label-warning">1 - Tipo do Imovel.</span>
 							<div class="form-check">
 								<input class="form-check-input" type="radio" name="tipoImovel" id="tipoImovel1" value="casa" checked>
 								<label class="form-check-label" for="tipoImovel1">
@@ -189,11 +189,11 @@ $date = date('d-m-Y H:i');
 						</div>
 						
 						<div class="form-group col-md-3">
-							<span class = "label label-warning">2 - Regime de ocupação do Imóvel.</span>
+							<span class = "label label-warning">2 - Regime de ocupacao do Imovel.</span>
 							<div class="form-check">
 								<input class="form-check-input" type="radio" name="regOcupImovel" id="regOcupImovel1" value="Propria" checked>
 								<label class="form-check-label" for="regOcupImovel1">
-									1. Própria
+									1. Propria
 								</label>
 							</div>
 							<div class="form-check">
@@ -227,7 +227,7 @@ $date = date('d-m-Y H:i');
 
 						<!-- Inicio Questao 3 -->						
 						<div class="form-group col-md-3">
-							<span class = "label label-warning"> 3 - Tipo de Construção.</span>
+							<span class = "label label-warning"> 3 - Tipo de Construcao.</span>
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="tipoConstr[]"  value="Alvenaria / Tijolo" checked>
 								<label class="form-check-label" >
@@ -284,7 +284,7 @@ $date = date('d-m-Y H:i');
 						<!-- Final questao 3 -->
 						<!-- inicio questao 4 -->
 						<div class="form-group col-md-3">
-							<span class = "label label-warning">4 - Fonte de abastecimento de água:</span>
+							<span class = "label label-warning">4 - Fonte de abastecimento de agua:</span>
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="abastAgua[]"  value="Rede geral" checked>
 								<label class="form-check-label" >
@@ -312,7 +312,7 @@ $date = date('d-m-Y H:i');
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="abastAgua[]"  value="Rio / Corrego / Lagoa" >
 								<label class="form-check-label" >
-									5. Rio / Córrego / Lagoa
+									5. Rio / Corrego / Lagoa
 								</label>
 							</div>
 
@@ -342,7 +342,7 @@ $date = date('d-m-Y H:i');
 				
 				<div class = "form-row">
 					<div class = "form-group col-md-4">
-						<span class = "label label-warning">5 - Tratamento de água para beber:</span>
+						<span class = "label label-warning">5 - Tratamento de agua para beber:</span>
 						<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="tratamentoAgua[]"  value="Filtro" checked>
 								<label class="form-check-label" >
@@ -358,7 +358,7 @@ $date = date('d-m-Y H:i');
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="tratamentoAgua[]"  value="Cloracao" >
 								<label class="form-check-label" >
-									3. Cloração
+									3. Cloracao
 								</label>
 							</div>
 							<div class="form-check">
@@ -386,7 +386,7 @@ $date = date('d-m-Y H:i');
 					
 					</div>
 					<div class = "form-group col-md-4">
-						<span class = "label label-warning">6 - Coleta de esgoto sanitário:</span>
+						<span class = "label label-warning">6 - Coleta de esgoto sanitario:</span>
 						<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="coletaEsgoto[]"  value="Rede Geral" checked>
 								<label class="form-check-label" >
@@ -402,7 +402,7 @@ $date = date('d-m-Y H:i');
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="coletaEsgoto[]"  value="Lancamento direto em curso dagua / Vala" >
 								<label class="form-check-label" >
-									3. Lançamento direto em curso dagua / Vala
+									3. Lancamento direto em curso dagua / Vala
 								</label>
 							</div>
 							<div class="form-check">
@@ -414,7 +414,7 @@ $date = date('d-m-Y H:i');
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="coletaEsgoto[]"  value="Lancado a ceu aberto" >
 								<label class="form-check-label" >
-									5. Lançado a céu aberto
+									5. Lancado a ceu aberto
 								</label>
 							</div>
 
@@ -435,7 +435,7 @@ $date = date('d-m-Y H:i');
 						<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="destinoLixo[]"  value="Coleta publica" checked>
 								<label class="form-check-label" >
-									1. Coleta Pública
+									1. Coleta Publica
 								</label>
 							</div>
 							<div class="form-check">
@@ -453,13 +453,13 @@ $date = date('d-m-Y H:i');
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="destinoLixo[]"  value="Lancado no fundo d quintal" >
 								<label class="form-check-label" >
-									4. Lançado no fundo do quintal
+									4. Lancado no fundo do quintal
 								</label>
 							</div>
 							<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="destinoLixo[]"  value="Lancado em terreno baldio" >
 								<label class="form-check-label" >
-									5. Lançado em terreno baldio
+									5. Lancado em terreno baldio
 								</label>
 							</div>
 
@@ -467,7 +467,7 @@ $date = date('d-m-Y H:i');
 
 								<input class="form-check-input" type="checkbox" name="destinoLixo[]"  value="Lancado em curso dagua" >
 								<label class="form-check-label" >
-									6. Lançado em curso dagua
+									6. Lancado em curso dagua
 								</label>
 							</div>
 							<div class="form-check">
@@ -483,11 +483,11 @@ $date = date('d-m-Y H:i');
 						</div>
 
 					<div class="form-group col-md-3">
-						<span class = "label label-warning">8 - Como o(a) Sr(a) avalia a qualidade da segurança pública no seu bairo?</span>
+						<span class = "label label-warning">8 - Como o(a) Sr(a) avalia a qualidade da seguranca publica no seu bairo?</span>
 							<div class="form-check">
 								<input class="form-check-input" type="radio" name="segPublica" id="segPublica1" value="Otima" checked>
 								<label class="form-check-label" for="segPublica1">
-									1. Ótima
+									1. Otima
 								</label>
 							</div>
 							<div class="form-check">
@@ -525,7 +525,7 @@ $date = date('d-m-Y H:i');
 			</div>
 			<div class = "form-row">
 						<div class="form-group col-md-12 bg-primary text-white">
-						<h1><b>Perfil da Família - Questões de 9 a 12</b></h1>
+						<h1><b>Perfil da Familia - Questoes de 9 a 12</b></h1>
 						</div>
 
 					</div>
@@ -619,7 +619,7 @@ $date = date('d-m-Y H:i');
 						</div>
 						
 						<div class="form-group col-md-3">
-								<span class = "label label-warning">10 - Constituição familiar</span>							<div class="form-check">
+								<span class = "label label-warning">10 - Constituicao familiar</span>							<div class="form-check">
 								<input class="form-check-input" type="radio" name="constFamiliar" id="constFamiliar1" value="Pai, mãe e filho(s)" checked>
 								<label class="form-check-label" for="constFamiliar1">
 									1. Pai, mãe e filho(s)  
@@ -684,7 +684,7 @@ $date = date('d-m-Y H:i');
 
 						<!-- Inicio Questao 3 -->						
 						<div class="form-group col-md-3">
-						<span class = "label label-warning">11 - Qual é a renda total de sua família por mês</span>
+						<span class = "label label-warning">11 - Qual éa renda total de sua familia por mes</span>
 							
 							<div class="form-check">
 								<input class="form-check-input" type="radio" name="rendaFamilia" id="rendaFamilia1" value="Até 1 SM" checked>
@@ -804,107 +804,10 @@ $date = date('d-m-Y H:i');
 					</div>
 			<div class = "form-row">
 						<div class="form-group col-md-12 bg-primary text-white">
-						<h1><b>BENS DE CONSUMO - Questões de 14 a 37</b></h1>
+						<h1><b>BENS DE CONSUMO - Questoes de 14 a 37</b></h1>
 						</div>
 
 			</div>
-			<div class="form-row">
-					<div class="form-group col-md-1">
-						<label class = "control-label small">14 - Carro</label>
-						<input class="form-control" type="text" name="carro" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">15 - Moto</label>
-						<input class="form-control" type="text" name="moto" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">16 - Bicicl.</label>
-						<input class="form-control" type="text" name="bicicleta" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">17-Mq.Lav.</label>
-						<input class="form-control" type="text" name="maqLavar" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">18-Tanqui.</label>
-						<input class="form-control" type="text" name="tanquinho" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">19-Gelad.</label>
-						<input class="form-control" type="text" name="geladeira" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">20-L.Louç.</label>
-						<input class="form-control" type="text" name="lavLoucas" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">21-M.Onda</label>
-						<input class="form-control" type="text" name="micOndas" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">22-F.Gás</label>
-						<input class="form-control" type="text" name="fogGas" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">23-DVD</label>
-						<input class="form-control" type="text" name="dvd" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">24-TV</label>
-						<input class="form-control" type="text" name="tv" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">25-par/tvcb</label>
-						<input class="form-control" type="text" name="apTvcabo" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">26-inter.BL</label>
-						<input class="form-control" type="text" name="interBl" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">27-interCel</label>
-						<input class="form-control" type="text" name="interCell" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">28-comput.</label>
-						<input class="form-control" type="text" name="computador" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">29-Noteb.</label>
-						<input class="form-control" type="text" name="notebook" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">30-Tablet</label>
-						<input class="form-control" type="text" name="tablet" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">31-Som</label>
-						<input class="form-control" type="text" name="som" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">32-TelFxo</label>
-						<input class="form-control" type="text" name="telFxo" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">33-TelCell</label>
-						<input class="form-control" type="text" name="telCell" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">34-TCel12a</label>
-						<input class="form-control" type="text" name="telCell12a" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">35-TCel18a</label>
-						<input class="form-control" type="text" name="telCell18a" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">36-Ventil.</label>
-						<input class="form-control" type="text" name="ventilador" value="0" maxlength = "2" required>
-					</div>
-					<div class="form-group col-md-1">
-						<label class = "control-label small">37-ArCond.</label>
-						<input class="form-control" type="text" name="arCondicionado" value="0" maxlength = "2" required>
-					</div>
 			<div class = "form-row">
 						<div class="form-group col-md-12 bg-primary text-white">
 						<h1><b>Sobre os pais/responsaveis - Questoes de 38 a 55</b></h1>
@@ -913,13 +816,13 @@ $date = date('d-m-Y H:i');
 			</div>
 			<div class = "form-row">
 						<div class="form-group col-md-12 bg-primary text-white">
-						<h1><b>Crianças e adolescentes - Questões de 56 a 75</b></h1>
+						<h1><b>Criancas e adolescentes - Questoes de 56 a 75</b></h1>
 						</div>
 
 			</div>
 			<div class = "form-row">
 						<div class="form-group col-md-12 bg-primary text-white">
-						<h1><b>Outras informações e conhecimentos - Questões de 76 a 100</b></h1>
+						<h1><b>Outras informacoes e conhecimentos - Questoes de 76 a 100</b></h1>
 						</div>
 
 			</div>
@@ -941,7 +844,7 @@ $date = date('d-m-Y H:i');
 		</div>
 	</div>
 		<div class="copyright" align="center">
-		<p>©2019 Formulários de pesquisa. All rights reserved | Design by <a href="http://www.netosales.com.br">NS informática.</a> - (77)9 9122-2146.</p>
+		<p>©2019 Formularios de pesquisa. All rights reserved | Design by <a href="http://www.netosales.com.br">NS informatica.</a> - (77)9 9122-2146.</p>
 
 		</div>
 	</div>
