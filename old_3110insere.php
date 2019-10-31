@@ -46,13 +46,6 @@ $arCondicionado = $_POST['arCondicionado'];
 $escolMae = $_POST['escolMae'];
 $escolPai = $_POST['escolPai'];
 $escolOutroResp = $_POST['escolOutroResp'];
-$sitOcupMae = $_POST['sitOcupMae'];
-$sitOcupPai = $_POST['sitOcupPai'];
-$sitOcupOutro = $_POST['sitOcupOutro'];
-$penaJudicial = $_POST['penaJudicial'];
-$regimePena = $_POST['regimePena'];
-$responsavelPena = $_POST['responsavelPena'];
-$possuiDoenca = $_POST['possuiDoenca'];
 
 
 $lista0 = '';
@@ -105,10 +98,9 @@ if(!empty($_POST['destinoLixo'])){
 
 
 
-$sql = "insert into aluno(data, responsavel, zona, bairro, comunidade, tipoImovel, regOcupImovel, tipoConstr, abastAgua, tratamentoAgua, coletaEsgoto, destinoLixo, segPublica, numeroPessoas, constFamiliar, rendaFamilia, contribRendaFamiliar, carro, moto, bicicleta, maqLavar, tanquinho, geladeira, lavLoucas, micOndas, fogGas, dvd, tv, apTvcabo, interBl, interCell, computador, notebook, tablet, som, telFxo, telCell, telCell12a, telCell18a, ventilador, arCondicionado, escolMae, escolPai, escolOutroResp, sitOcupMae, sitOcupPai, sitOcupOutro, penaJudicial, regimePena, responsavelPena, possuiDoenca) values('$data','$responsavel', '$zona','$bairro','$comunidade', '$tipoImovel', '$regOcupImovel', '$tipoConstr', '$abastAgua', '$tratamentoAgua', '$coletaEsgoto', '$destinoLixo', '$segPublica', '$numeroPessoas', '$constFamiliar', '$rendaFamilia', '$contribRendaFamiliar', '$carro','$moto', '$bicicleta', '$maqLavar', '$tanquinho', '$geladeira', '$lavLoucas', '$micOndas', '$fogGas', '$dvd', '$tv', '$apTvcabo', '$interBl', '$interCell', '$computador', '$notebook', '$tablet', '$som', '$telFxo', '$telCell', '$telCell12a', '$telCell18a', '$ventilador', '$arCondicionado', '$escolMae', '$escolPai', '$escolOutroResp', '$sitOcupMae', '$sitOcupPai', '$sitOcupOutro', '$penaJudicial', '$regimePena', '$responsavelPena', '$possuiDoenca')";
+$sql = "insert into aluno(data, responsavel, zona, bairro, comunidade, tipoImovel, regOcupImovel, tipoConstr, abastAgua, tratamentoAgua, coletaEsgoto, destinoLixo, segPublica, numeroPessoas, constFamiliar, rendaFamilia, contribRendaFamiliar, carro, moto, bicicleta, maqLavar, tanquinho, geladeira, lavLoucas, micOndas, fogGas, dvd, tv, apTvcabo, interBl, interCell, computador, notebook, tablet, som, telFxo, telCell, telCell12a, telCell18a, ventilador, arCondicionado, escolMae, escolPai, escolOutroResp) values('$data','$responsavel', '$zona','$bairro','$comunidade', '$tipoImovel', '$regOcupImovel', '$tipoConstr', '$abastAgua', '$tratamentoAgua', '$coletaEsgoto', '$destinoLixo', '$segPublica', '$numeroPessoas', '$constFamiliar', '$rendaFamilia', '$contribRendaFamiliar', '$carro','$moto', '$bicicleta', '$maqLavar', '$tanquinho', '$geladeira', '$lavLoucas', '$micOndas', '$fogGas', '$dvd', '$tv', '$apTvcabo', '$interBl', '$interCell', '$computador', '$notebook', '$tablet', '$som', '$telFxo', '$telCell', '$telCell12a', '$telCell18a', '$ventilador', '$arCondicionado', '$escolMae', '$escolPai', '$escolOutroResp')";
 $count = $con->exec($sql);
 
-
-echo "<html><head><title>Cadastro OK</title></head><body bgcolor='#00ABF1'><p>$count registro foi concluido</p><br><p>+ Info...</p><br><a href='index.php'><h1>Clique aqui para Novo cadastro</h1></a></body></html>"
+echo "<p>$count registro foi concluido</p><br><a href='index.php'>Novo cadastro</a>"
 
  ?>

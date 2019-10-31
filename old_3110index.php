@@ -42,42 +42,6 @@ $date = date('d-m-Y H:i');
 		comunidade.disabled = true;
 	}
 };
-function verificaReclusao(value){
-	var penaJudicial = document.getElementById("penaJudicial");
-	if (value == "Sim") {
-		regimePena1.disabled = false;
-		regimePena2.disabled = false;
-		regimePena3.disabled = false;
-		regimePena4.disabled = false;
-		regimePena5.disabled = false;
-		regimePena6.disabled = false;
-		regimePena7.disabled = false;
-		responsavelPena1.disabled = false;
-		responsavelPena2.disabled = false;
-		responsavelPena3.disabled = false;
-		responsavelPena4.disabled = false;
-		responsavelPena5.disabled = false;
-		responsavelPena6.disabled = false;
-
-
-	}else if(value == "Nao"){
-		regimePena7.checked = true;
-		responsavelPena6.checked = true;
-		regimePena1.disabled = true;
-		regimePena2.disabled = true;
-		regimePena3.disabled = true;
-		regimePena4.disabled = true;
-		regimePena5.disabled = true;
-		regimePena6.disabled = true;
-		regimePena7.disabled = true;
-		responsavelPena1.disabled = true;
-		responsavelPena2.disabled = true;
-		responsavelPena3.disabled = true;
-		responsavelPena4.disabled = true;
-		responsavelPena5.disabled = true;
-		responsavelPena6.disabled = true;
-	}
-};
 </script>
 </head>
 <body>
@@ -949,14 +913,14 @@ function verificaReclusao(value){
 			</div>
 			<div class = "form-row">
 				<div class="form-group col-md-2">
-						<span class = "label label-warning">38 - Escol. Mãe / Madastra</span>
+						<span class = "label label-warning">38 - Escolaridade Mae / Madastra</span>
 						<select class="form-control" name="escolMae" id = "escolMae" >
 							<option selected>Escolha uma Opção...</option>
 							<option value="Analfabeto">1 - Analfabeto</option>
 							<option value="Ensino Fundamental Incompleto">2 - Ensino Fundamental Incompleto</option>
 							<option value="Ensino Fundamental Completo">3 - Ensino Fundamental Completo</option>
-							<option value="Ensino Medio Incompleto">4 - Ensino Médio Incompleto</option>
-							<option value="Ensino Medio Completo">5 - Ensino Médio Completo</option>
+							<option value="Ensino Medio Incompleto">4 - Ensino Medio Incompleto</option>
+							<option value="Ensino Medio Completo">5 - Ensino Medio Completo</option>
 							<option value="Ensino Superior Incompleto">6 - Ensino Superior Incompleto</option>
 							<option value="Ensino Superior Completo">7 - Ensino Superior Completo</option>
 							<option value="Outro">8 - Outro</option>
@@ -966,14 +930,14 @@ function verificaReclusao(value){
 						</select>
 				</div>
 				<div class="form-group col-md-2">
-						<span class = "label label-warning">39 - Escol. Pai / Padastro</span>
+						<span class = "label label-warning">39 - Escolaridade Pai / Padastro</span>
 						<select class="form-control" name="escolPai" id = "escolPai" >
 							<option selected>Escolha uma Opção...</option>
 							<option value="Analfabeto">1 - Analfabeto</option>
 							<option value="Ensino Fundamental Incompleto">2 - Ensino Fundamental Incompleto</option>
 							<option value="Ensino Fundamental Completo">3 - Ensino Fundamental Completo</option>
-							<option value="Ensino Medio Incompleto">4 - Ensino Médio Incompleto</option>
-							<option value="Ensino Medio Completo">5 - Ensino Médio Completo</option>
+							<option value="Ensino Medio Incompleto">4 - Ensino Medio Incompleto</option>
+							<option value="Ensino Medio Completo">5 - Ensino Medio Completo</option>
 							<option value="Ensino Superior Incompleto">6 - Ensino Superior Incompleto</option>
 							<option value="Ensino Superior Completo">7 - Ensino Superior Completo</option>
 							<option value="Outro">8 - Outro</option>
@@ -983,14 +947,14 @@ function verificaReclusao(value){
 						</select>
 				</div>
 				<div class="form-group col-md-2">
-						<span class = "label label-warning">40 - Escol. Outro Responsável</span>
+						<span class = "label label-warning">40 - Escolaridade Outro Responsavel</span>
 						<select class="form-control" name="escolOutroResp" id = "escolOutroResp" >
 							<option selected>Escolha uma Opção...</option>
 							<option value="Analfabeto">1 - Analfabeto</option>
 							<option value="Ensino Fundamental Incompleto">2 - Ensino Fundamental Incompleto</option>
 							<option value="Ensino Fundamental Completo">3 - Ensino Fundamental Completo</option>
-							<option value="Ensino Medio Incompleto">4 - Ensino Médio Incompleto</option>
-							<option value="Ensino Medio Completo">5 - Ensino Médio Completo</option>
+							<option value="Ensino Medio Incompleto">4 - Ensino Medio Incompleto</option>
+							<option value="Ensino Medio Completo">5 - Ensino Medio Completo</option>
 							<option value="Ensino Superior Incompleto">6 - Ensino Superior Incompleto</option>
 							<option value="Ensino Superior Completo">7 - Ensino Superior Completo</option>
 							<option value="Outro">8 - Outro</option>
@@ -999,192 +963,9 @@ function verificaReclusao(value){
 
 						</select>
 				</div>
-				<div class="form-group col-md-2">
-						<span class = "label label-info">41 - Sit. Ocup. Mãe / Madastra</span>
-						<select class="form-control" name="sitOcupMae" id = "sitOcupMae" >
-							<option selected>Escolha uma Opção...</option>
-							<option value="Autonoma">1 - Autônoma</option>
-							<option value="Profissional Liberal">2 - Profissional Liberal</option>
-							<option value="Empresaria">3- Empresária</option>
-							<option value="Com Carteira Assinada">4 - Com Carteira Assinada</option>
-							<option value="Sem Carteira Assinada">5 - Sem Carteira Assinada</option>
-							<option value="Funcionaria Publica Efetiva">6 - Funcionária Pública Efetiva</option>
-							<option value="Funcionaria Publica Contratada">7 - Funcionária Pública Contratada</option>
-							<option value="Aposentada">8 - Aposentada</option>
-							<option value="Pensionista">9 - Pensionista</option>
-							<option value="Dona de Casa">10 - Dona de Casa</option>
-							<option value="Nunca Trabalhou">11- Nunca Trabalhou</option>
-							<option value="Desempregada">12 - Desempregada</option>
-							<option value="Diarista">13 - Diarista</option>
-							<option value="Estudante">14 - Estudante</option>
-							<option value="Outro">15 - Outro</option>
-							<option value="Sem Resposta">16 - Sem Resposta</option>
-						</select>
-				</div>
-				<div class="form-group col-md-2">
-						<span class = "label label-info">42 - Sit. Ocup. Pai - Padastro</span>
-						<select class="form-control" name="sitOcupPai" id = "sitOcupPai" >
-							<option selected>Escolha uma Opção...</option>
-							<option value="Autonoma">1 - Autônoma</option>
-							<option value="Profissional Liberal">2 - Profissional Liberal</option>
-							<option value="Empresaria">3- Empresária</option>
-							<option value="Com Carteira Assinada">4 - Com Carteira Assinada</option>
-							<option value="Sem Carteira Assinada">5 - Sem Carteira Assinada</option>
-							<option value="Funcionaria Publica Efetiva">6 - Funcionária Pública Efetiva</option>
-							<option value="Funcionaria Publica Contratada">7 - Funcionária Pública Contratada</option>
-							<option value="Aposentada">8 - Aposentada</option>
-							<option value="Pensionista">9 - Pensionista</option>
-							<option value="Dona de Casa">10 - Dona de Casa</option>
-							<option value="Nunca Trabalhou">11- Nunca Trabalhou</option>
-							<option value="Desempregada">12 - Desempregada</option>
-							<option value="Diarista">13 - Diarista</option>
-							<option value="Estudante">14 - Estudante</option>
-							<option value="Outro">15 - Outro</option>
-							<option value="Sem Resposta">16 - Sem Resposta</option>
-						</select>
-				</div>
-				<div class="form-group col-md-2">
-						<span class = "label label-info">42 - Sit. Ocup. Outro Responsável</span>
-						<select class="form-control" name="sitOcupOutro" id = "sitOcupOutro" >
-							<option selected>Escolha uma Opção...</option>
-							<option value="Autonoma">1 - Autônoma</option>
-							<option value="Profissional Liberal">2 - Profissional Liberal</option>
-							<option value="Empresaria">3- Empresária</option>
-							<option value="Com Carteira Assinada">4 - Com Carteira Assinada</option>
-							<option value="Sem Carteira Assinada">5 - Sem Carteira Assinada</option>
-							<option value="Funcionaria Publica Efetiva">6 - Funcionária Pública Efetiva</option>
-							<option value="Funcionaria Publica Contratada">7 - Funcionária Pública Contratada</option>
-							<option value="Aposentada">8 - Aposentada</option>
-							<option value="Pensionista">9 - Pensionista</option>
-							<option value="Dona de Casa">10 - Dona de Casa</option>
-							<option value="Nunca Trabalhou">11- Nunca Trabalhou</option>
-							<option value="Desempregada">12 - Desempregada</option>
-							<option value="Diarista">13 - Diarista</option>
-							<option value="Estudante">14 - Estudante</option>
-							<option value="Outro">15 - Outro</option>
-							<option value="Sem Resposta">16 - Sem Resposta</option>
-						</select>
-				</div>
-				<div class="form-group col-md-3">
-							<span class = "label label-success">48. Algum dos responsáveis já cumpriu pena judicial?</span>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="penaJudicial" id="penaJudicial1" onchange="verificaReclusao(this.value)" value="Sim" >
-								<label class="form-check-label" for="penaJudicial1">
-									1. Sim
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="penaJudicial" id="penaJudicial2" onchange="verificaReclusao(this.value)" value="Nao" checked>
-								<label class="form-check-label" for="penaJudicial2">
-									2. Não
-								</label>
-							</div>
-							
 
 
-				</div>
-				<div class="form-group col-md-2">
-							<span class = "label label-success">49. Em qual regime?</span>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="regimePena" id="regimePena1" value="Reclusao / Fechado" disabled>
-								<label class="form-check-label" for="regimePena1">
-									1. Reclusão/Fechado
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="regimePena" id="regimePena2" value="Aberto" disabled>
-								<label class="form-check-label" for="regimePena2">
-									2. Aberto
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="regimePena" id="regimePena3" value="Semiaberto" disabled>
-								<label class="form-check-label" for="regimePena3">
-									3. Semiaberto
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="regimePena" id="regimePena4" value="Provisorio" disabled>
-								<label class="form-check-label" for="regimePena4">
-									4. Provisório
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="regimePena" id="regimePena5" value="Outro" disabled>
-								<label class="form-check-label" for="regimePena5">
-									5. Outro
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="regimePena" id="regimePena6" value="Sem Resposta" disabled>
-								<label class="form-check-label" for="regimePena6">
-									6. Sem Resposta
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="regimePena" id="regimePena7" value="Nao se Aplica" checked>
-								<label class="form-check-label" for="regimePena7">
-									7. Não se Aplica
-								</label>
-							</div>
-							
-				</div>		
-				<div class="form-group col-md-2">
-							<span class = "label label-success">50. Qual O Responsável?</span>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="responsavelPena" id="responsavelPena1" value="Mae / Madrasta" disabled>
-								<label class="form-check-label" for="responsavelPena1">
-									1. Mãe / Madrasta
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="responsavelPena" id="responsavelPena2" value="Pai / Padrasto" disabled>
-								<label class="form-check-label" for="responsavelPena2">
-									2. Pai / Padrasto
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="responsavelPena" id="responsavelPena3" value="irmao" disabled>
-								<label class="form-check-label" for="responsavelPena3">
-									3. Irmão
-								</label>
-							</div>
-							
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="responsavelPena" id="responsavelPena4" value="Outro" disabled>
-								<label class="form-check-label" for="responsavelPena4">
-									4. Outro
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="responsavelPena" id="responsavelPena5" value="Sem Resposta" disabled>
-								<label class="form-check-label" for="responsavelPena5">
-									5. Sem Resposta
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="responsavelPena" id="responsavelPena6" value="Nao se Aplica" checked>
-								<label class="form-check-label" for="responsavelPena6">
-									6. Não se Aplica
-								</label>
-							</div>
-				</div>
-				<div class="form-group col-md-2">
-							<span class = "label label-danger">51. Algum dos responsáveis possui alguma doença?</span>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="possuiDoenca" id="possuiDoenca1" onchange="verificaReclusao(this.value)" value="Sim" >
-								<label class="form-check-label" for="possuiDoenca1">
-									1. Sim
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="possuiDoenca" id="possuiDoenca2"  value="Nao" checked>
-								<label class="form-check-label" for="possuiDoenca2">
-									2. Não
-								</label>
-				</div>
 			</div>
-			
 			<div class = "form-row">
 						<div class="form-group col-md-12 bg-primary text-white">
 						<h1><b>Crianças e adolescentes - Questões de 56 a 75</b></h1>
