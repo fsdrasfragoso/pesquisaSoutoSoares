@@ -811,99 +811,99 @@ $date = date('d-m-Y H:i');
 			<div class="form-row">
 					<div class="form-group col-md-1">
 						<label class = "control-label small">14 - Carro</label>
-						<input class="form-control" type="text" name="carro" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="carro" value="0" maxlength = "2"  required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">15 - Moto</label>
-						<input class="form-control" type="text" name="moto" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="moto" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">16 - Bicicl.</label>
-						<input class="form-control" type="text" name="bicicleta" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="bicicleta" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">17-Mq.Lav.</label>
-						<input class="form-control" type="text" name="maqLavar" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="maqLavar" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">18-Tanqui.</label>
-						<input class="form-control" type="text" name="tanquinho" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="tanquinho" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">19-Gelad.</label>
-						<input class="form-control" type="text" name="geladeira" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="geladeira" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">20-L.Louç.</label>
-						<input class="form-control" type="text" name="lavLoucas" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="lavLoucas" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">21-M.Onda</label>
-						<input class="form-control" type="text" name="micOndas" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="micOndas" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">22-F.Gás</label>
-						<input class="form-control" type="text" name="fogGas" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="fogGas" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">23-DVD</label>
-						<input class="form-control" type="text" name="dvd" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="dvd" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">24-TV</label>
-						<input class="form-control" type="text" name="tv" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="tv" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">25-par/tvcb</label>
-						<input class="form-control" type="text" name="apTvcabo" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="apTvcabo" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">26-inter.BL</label>
-						<input class="form-control" type="text" name="interBl" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="interBl" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">27-interCel</label>
-						<input class="form-control" type="text" name="interCell" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="interCell" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">28-comput.</label>
-						<input class="form-control" type="text" name="computador" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="computador" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">29-Noteb.</label>
-						<input class="form-control" type="text" name="notebook" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="notebook" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">30-Tablet</label>
-						<input class="form-control" type="text" name="tablet" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="tablet" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">31-Som</label>
-						<input class="form-control" type="text" name="som" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="som" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">32-TelFxo</label>
-						<input class="form-control" type="text" name="telFxo" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="telFxo" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">33-TelCell</label>
-						<input class="form-control" type="text" name="telCell" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="telCell" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">34-TCel12a</label>
-						<input class="form-control" type="text" name="telCell12a" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="telCell12a" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">35-TCel18a</label>
-						<input class="form-control" type="text" name="telCell18a" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="telCell18a" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">36-Ventil.</label>
-						<input class="form-control" type="text" name="ventilador" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="ventilador" value="0" maxlength = "2" required>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">37-ArCond.</label>
-						<input class="form-control" type="text" name="arCondicionado" value="0" maxlength = "2" required>
+						<input class="form-control" type="number" name="arCondicionado" value="0" maxlength = "2" required>
 					</div>
 			<div class = "form-row">
 						<div class="form-group col-md-12 bg-primary text-white">
