@@ -912,6 +912,61 @@ $date = date('d-m-Y H:i');
 
 			</div>
 			<div class = "form-row">
+				<div class="form-group col-md-2">
+						<span class = "label label-warning">38 - Escolaridade Mae / Madastra</span>
+						<select class="form-control" name="escolMae" id = "escolMae" >
+							<option selected>Escolha uma Opção...</option>
+							<option value="Analfabeto">1 - Analfabeto</option>
+							<option value="Ensino Fundamental Incompleto">2 - Ensino Fundamental Incompleto</option>
+							<option value="Ensino Fundamental Completo">3 - Ensino Fundamental Completo</option>
+							<option value="Ensino Medio Incompleto">4 - Ensino Medio Incompleto</option>
+							<option value="Ensino Medio Completo">5 - Ensino Medio Completo</option>
+							<option value="Ensino Superior Incompleto">6 - Ensino Superior Incompleto</option>
+							<option value="Ensino Superior Completo">7 - Ensino Superior Completo</option>
+							<option value="Outro">8 - Outro</option>
+							<option value="Sem Resposta">9 - Sem Resposta</option>
+
+
+						</select>
+				</div>
+				<div class="form-group col-md-2">
+						<span class = "label label-warning">39 - Escolaridade Pai / Padastro</span>
+						<select class="form-control" name="escolPai" id = "escolPai" >
+							<option selected>Escolha uma Opção...</option>
+							<option value="Analfabeto">1 - Analfabeto</option>
+							<option value="Ensino Fundamental Incompleto">2 - Ensino Fundamental Incompleto</option>
+							<option value="Ensino Fundamental Completo">3 - Ensino Fundamental Completo</option>
+							<option value="Ensino Medio Incompleto">4 - Ensino Medio Incompleto</option>
+							<option value="Ensino Medio Completo">5 - Ensino Medio Completo</option>
+							<option value="Ensino Superior Incompleto">6 - Ensino Superior Incompleto</option>
+							<option value="Ensino Superior Completo">7 - Ensino Superior Completo</option>
+							<option value="Outro">8 - Outro</option>
+							<option value="Sem Resposta">9 - Sem Resposta</option>
+
+
+						</select>
+				</div>
+				<div class="form-group col-md-2">
+						<span class = "label label-warning">40 - Escolaridade Outro Responsavel</span>
+						<select class="form-control" name="escolOutroResp" id = "escolOutroResp" >
+							<option selected>Escolha uma Opção...</option>
+							<option value="Analfabeto">1 - Analfabeto</option>
+							<option value="Ensino Fundamental Incompleto">2 - Ensino Fundamental Incompleto</option>
+							<option value="Ensino Fundamental Completo">3 - Ensino Fundamental Completo</option>
+							<option value="Ensino Medio Incompleto">4 - Ensino Medio Incompleto</option>
+							<option value="Ensino Medio Completo">5 - Ensino Medio Completo</option>
+							<option value="Ensino Superior Incompleto">6 - Ensino Superior Incompleto</option>
+							<option value="Ensino Superior Completo">7 - Ensino Superior Completo</option>
+							<option value="Outro">8 - Outro</option>
+							<option value="Sem Resposta">9 - Sem Resposta</option>
+
+
+						</select>
+				</div>
+
+
+			</div>
+			<div class = "form-row">
 						<div class="form-group col-md-12 bg-primary text-white">
 						<h1><b>Crianças e adolescentes - Questões de 56 a 75</b></h1>
 						</div>
