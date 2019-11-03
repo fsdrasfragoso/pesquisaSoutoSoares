@@ -78,7 +78,6 @@ function verificaReclusao(value){
 		responsavelPena6.disabled = true;
 	}
 };
-
 </script>
 </head>
 <body>
@@ -198,7 +197,7 @@ function verificaReclusao(value){
 						<div class="form-group col-md-3">
 							<span class = "label label-warning">1 - Tipo do Imóvel.</span>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="tipoImovel" id="tipoImovel1" value="casa">
+								<input class="form-check-input" type="radio" name="tipoImovel" id="tipoImovel1" value="casa" checked>
 								<label class="form-check-label" for="tipoImovel1">
 									1. Casa
 								</label>
@@ -216,7 +215,7 @@ function verificaReclusao(value){
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="tipoImovel" id="tipoImovel4" value="Sem Resposta" checked>
+								<input class="form-check-input" type="radio" name="tipoImovel" id="tipoImovel4" value="Sem Resposta">
 								<label class="form-check-label" for="tipoImovel4">
 									4. Sem Resposta
 								</label>
@@ -228,7 +227,7 @@ function verificaReclusao(value){
 						<div class="form-group col-md-3">
 							<span class = "label label-warning">2 - Regime de ocupação do Imóvel.</span>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="regOcupImovel" id="regOcupImovel1" value="Propria">
+								<input class="form-check-input" type="radio" name="regOcupImovel" id="regOcupImovel1" value="Propria" checked>
 								<label class="form-check-label" for="regOcupImovel1">
 									1. Própria
 								</label>
@@ -252,7 +251,7 @@ function verificaReclusao(value){
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="regOcupImovel" id="regOcupImovel5" value="Sem Resposta" checked>
+								<input class="form-check-input" type="radio" name="regOcupImovel" id="regOcupImovel5" value="Sem Resposta">
 								<label class="form-check-label" for="regOcupImovel5">
 									5. Sem Resposta
 								</label>
@@ -266,7 +265,7 @@ function verificaReclusao(value){
 						<div class="form-group col-md-3">
 							<span class = "label label-warning"> 3 - Tipo de Construção.</span>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" name="tipoConstr[]"  value="Alvenaria / Tijolo">
+								<input class="form-check-input" type="checkbox" name="tipoConstr[]"  value="Alvenaria / Tijolo" checked>
 								<label class="form-check-label" >
 									1. Alvenaria / Tijolo
 								</label>
@@ -309,7 +308,7 @@ function verificaReclusao(value){
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" name="tipoConstr[]"  value="Sem Resposta" checked>
+								<input class="form-check-input" type="checkbox" name="tipoConstr[]"  value="Sem Resposta">
 								<label class="form-check-label" >
 									8. Sem Resposta
 								</label>
@@ -323,7 +322,7 @@ function verificaReclusao(value){
 						<div class="form-group col-md-3">
 							<span class = "label label-warning">4 - Fonte de abastecimento de água:</span>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" name="abastAgua[]"  value="Rede geral">
+								<input class="form-check-input" type="checkbox" name="abastAgua[]"  value="Rede geral" checked>
 								<label class="form-check-label" >
 									1. Rede geral
 								</label>
@@ -362,7 +361,7 @@ function verificaReclusao(value){
 							</div>
 							<div class="form-check">
 
-								<input class="form-check-input" type="checkbox" name="abastAgua[]"  value="Sem Resposta" checked>
+								<input class="form-check-input" type="checkbox" name="abastAgua[]"  value="Sem Resposta" >
 								<label class="form-check-label" >
 									7. Sem Resposta
 								</label>
@@ -381,7 +380,7 @@ function verificaReclusao(value){
 					<div class = "form-group col-md-4">
 						<span class = "label label-warning">5 - Tratamento de água para beber:</span>
 						<div class="form-check">
-								<input class="form-check-input" type="checkbox" name="tratamentoAgua[]"  value="Filtro">
+								<input class="form-check-input" type="checkbox" name="tratamentoAgua[]"  value="Filtro" checked>
 								<label class="form-check-label" >
 									1. Filtro
 								</label>
@@ -413,7 +412,7 @@ function verificaReclusao(value){
 
 							<div class="form-check">
 
-								<input class="form-check-input" type="checkbox" name="tratamentoAgua[]"  value="Sem Resposta" checked>
+								<input class="form-check-input" type="checkbox" name="tratamentoAgua[]"  value="Sem Resposta" >
 								<label class="form-check-label" >
 									6. Sem Resposta
 								</label>
@@ -425,7 +424,7 @@ function verificaReclusao(value){
 					<div class = "form-group col-md-4">
 						<span class = "label label-warning">6 - Coleta de esgoto sanitário:</span>
 						<div class="form-check">
-								<input class="form-check-input" type="checkbox" name="coletaEsgoto[]"  value="Rede Geral">
+								<input class="form-check-input" type="checkbox" name="coletaEsgoto[]"  value="Rede Geral" checked>
 								<label class="form-check-label" >
 									1. Rede Geral
 								</label>
@@ -457,7 +456,7 @@ function verificaReclusao(value){
 
 							<div class="form-check">
 
-								<input class="form-check-input" type="checkbox" name="coletaEsgoto[]"  value="Sem Resposta" checked>
+								<input class="form-check-input" type="checkbox" name="coletaEsgoto[]"  value="Sem Resposta" >
 								<label class="form-check-label" >
 									6. Sem Resposta
 								</label>
@@ -470,7 +469,7 @@ function verificaReclusao(value){
 					<div class = "form-group col-md-4">
 						<span class = "label label-warning">7 - Destino do Lixo:</span>
 						<div class="form-check">
-								<input class="form-check-input" type="checkbox" name="destinoLixo[]"  value="Coleta publica">
+								<input class="form-check-input" type="checkbox" name="destinoLixo[]"  value="Coleta publica" checked>
 								<label class="form-check-label" >
 									1. Coleta Pública
 								</label>
@@ -509,7 +508,7 @@ function verificaReclusao(value){
 							</div>
 							<div class="form-check">
 
-								<input class="form-check-input" type="checkbox" name="destinoLixo[]"  value="Sem Resposta" checked>
+								<input class="form-check-input" type="checkbox" name="destinoLixo[]"  value="Sem Resposta" >
 								<label class="form-check-label" >
 									7. Sem Resposta
 								</label>
@@ -522,7 +521,7 @@ function verificaReclusao(value){
 					<div class="form-group col-md-3">
 						<span class = "label label-warning">8 - Como o(a) Sr(a) avalia a qualidade da segurança pública no seu bairo?</span>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="segPublica" id="segPublica1" value="Otima">
+								<input class="form-check-input" type="radio" name="segPublica" id="segPublica1" value="Otima" checked>
 								<label class="form-check-label" for="segPublica1">
 									1. Ótima
 								</label>
@@ -546,7 +545,7 @@ function verificaReclusao(value){
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="segPublica" id="segPublica5" value="Sem Resposta" checked>
+								<input class="form-check-input" type="radio" name="segPublica" id="segPublica5" value="Sem Resposta">
 								<label class="form-check-label" for="segPublica5">
 									5. Sem Resposta
 								</label>
@@ -570,7 +569,7 @@ function verificaReclusao(value){
 						<div class="form-group col-md-3">
 							<span class = "label label-warning">9 - Número de Pessoas residentes no domicílio</span>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="numeroPessoas" id="numeroPessoas1" value="1">
+								<input class="form-check-input" type="radio" name="numeroPessoas" id="numeroPessoas1" value="1" checked>
 								<label class="form-check-label" for="numeroPessoas1">
 									1
 								</label>
@@ -648,7 +647,7 @@ function verificaReclusao(value){
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="numeroPessoas" id="numeroPessoas14" value="Sem Resposta" checked>
+								<input class="form-check-input" type="radio" name="numeroPessoas" id="numeroPessoas14" value="Sem Resposta">
 								<label class="form-check-label" for="numeroPessoas14">
 									Sem resposta
 								</label>
@@ -657,7 +656,7 @@ function verificaReclusao(value){
 						
 						<div class="form-group col-md-3">
 								<span class = "label label-warning">10 - Constituição familiar</span>							<div class="form-check">
-								<input class="form-check-input" type="radio" name="constFamiliar" id="constFamiliar1" value="Pai, mãe e filho(s)">
+								<input class="form-check-input" type="radio" name="constFamiliar" id="constFamiliar1" value="Pai, mãe e filho(s)" checked>
 								<label class="form-check-label" for="constFamiliar1">
 									1. Pai, mãe e filho(s)  
 								</label>
@@ -711,7 +710,7 @@ function verificaReclusao(value){
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="constFamiliar" id="constFamiliar10" value="Sem Resposta" checked>
+								<input class="form-check-input" type="radio" name="constFamiliar" id="constFamiliar10" value="Sem Resposta">
 								<label class="form-check-label" for="constFamiliar10">
 									10. Sem Resposta 
 								</label>
@@ -724,7 +723,7 @@ function verificaReclusao(value){
 						<span class = "label label-warning">11 - Qual é a renda total de sua família por mês</span>
 							
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="rendaFamilia" id="rendaFamilia1" value="Ate 1 SM" >
+								<input class="form-check-input" type="radio" name="rendaFamilia" id="rendaFamilia1" value="Até 1 SM" checked>
 								<label class="form-check-label" for="rendaFamilia1">
 									1. Até 1 SM  
 								</label>
@@ -760,7 +759,7 @@ function verificaReclusao(value){
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="rendaFamilia" id="rendaFamilia7" value="Sem Resposta" checked>
+								<input class="form-check-input" type="radio" name="rendaFamilia" id="rendaFamilia7" value="Sem Resposta ">
 								<label class="form-check-label" for="rendaFamilia7">
 									7.Sem Resposta 
 								</label>
@@ -773,7 +772,7 @@ function verificaReclusao(value){
 						<div class="form-group col-md-3">
 							<span class = "label label-warning">12 - Quem contribui para a renda familiar?</span>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="contribRendaFamiliar" id="contribRendaFamiliar1" value="Somente o Pai/Padrasto" >
+								<input class="form-check-input" type="radio" name="contribRendaFamiliar" id="contribRendaFamiliar1" value="Somente o Pai/Padrasto" checked>
 								<label class="form-check-label" for="constFamiliar1">
 									1. Somente o Pai/Padrasto   
 								</label>
@@ -827,7 +826,7 @@ function verificaReclusao(value){
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="contribRendaFamiliar" id="contribRendaFamiliar10" value="Sem Resposta" checked>
+								<input class="form-check-input" type="radio" name="contribRendaFamiliar" id="contribRendaFamiliar10" value="Sem Resposta">
 								<label class="form-check-label for contribRendaFamiliar10"> 
 									10.Sem Resposta   
 								</label>
@@ -1170,222 +1169,21 @@ function verificaReclusao(value){
 								</label>
 							</div>
 				</div>
-				<div class="form-group col-md-3">
+				<div class="form-group col-md-2">
 							<span class = "label label-danger">51. Algum dos responsáveis possui alguma doença?</span>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="possuiDoenca" id="possuiDoenca1"  value="Sim" >
+								<input class="form-check-input" type="radio" name="possuiDoenca" id="possuiDoenca1" onchange="verificaReclusao(this.value)" value="Sim" >
 								<label class="form-check-label" for="possuiDoenca1">
 									1. Sim
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="possuiDoenca" id="possuiDoenca2"   value="Nao">
+								<input class="form-check-input" type="radio" name="possuiDoenca" id="possuiDoenca2"  value="Nao" checked>
 								<label class="form-check-label" for="possuiDoenca2">
 									2. Não
-							</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="possuiDoenca" id="possuiDoenca3"   value="Sem Resposta" checked>
-								<label class="form-check-label" for="possuiDoenca3">
-									3. Sem Resposta
-							</label>
-							</div>
+								</label>
 				</div>
-				
-				
-
-			
 			</div>
-			<div class = "form-row">
-				<div class="form-group col-md-3">
-					
-
-				</div>
-				<div class="form-group col-md-3">
-					<span class = "label label-warning">52. Algum dos adultos faz uso das substancias a sequir?</span>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="usoSubstancias" id="usoSubstancias1"  value="Alcool" >
-								<label class="form-check-label" for="usoSubstancias1">
-									1. Alcool
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="usoSubstancias" id="usoSubstancias2"   value="Cigarro">
-								<label class="form-check-label" for="usoSubstancias2">
-									2. Cigarro
-							</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="usoSubstancias" id="usoSubstancias3"   value="Maconha">
-								<label class="form-check-label" for="usoSubstancias3">
-									3. Maconha
-							</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="usoSubstancias" id="usoSubstancias4"   value="Crack">
-								<label class="form-check-label" for="usoSubstancias4">
-									4. Crack
-							</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="usoSubstancias" id="usoSubstancias5"   value="Cocaina">
-								<label class="form-check-label" for="usoSubstancias5">
-									5. Cocaina
-							</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="usoSubstancias" id="usoSubstancias6"   value="Outro">
-								<label class="form-check-label" for="usoSubstancias6">
-									6. Outro
-							</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="usoSubstancias" id="usoSubstancias7"   value="Nao">
-								<label class="form-check-label" for="usoSubstancias7">
-									7. Nao
-							</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="usoSubstancias" id="usoSubstancias8"   value="Sem Reposta">
-								<label class="form-check-label" for="usoSubstancias8">
-									8. Sem Resposta
-							</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="usoSubstancias" id="usoSubstancias9"   value="Nao se aplica" checked>
-								<label class="form-check-label" for="usoSubstancias9">
-									9. Nao se aplica
-							</label>
-							</div>
-
-
-				</div>
-
-				<div class="form-group col-md-3">
-					<span class = "label label-warning">53. Quantos (adultos)?</span>
-					<div class="form-check">
-								<input class="form-check-input" type="radio" name="quantosAdultos" id="quantosAdultos1"   value="1">
-								<label class="form-check-label" for="quantosAdultos1">
-									1. 01
-							</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="quantosAdultos" id="quantosAdultos2"   value="2 a 3">
-								<label class="form-check-label" for="quantosAdultos2">
-									2. De 02 a 03
-							</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="quantosAdultos" id="quantosAdultos3"   value="Mais de 3">
-								<label class="form-check-label" for="quantosAdultos3">
-									3. Mais de  03
-							</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="quantosAdultos" id="quantosAdultos4"   value="Sem Resposta">
-								<label class="form-check-label" for="quantosAdultos4">
-									4. Sem Resposta
-							</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="quantosAdultos" id="quantosAdultos5"   value="Nao se aplica" checked>
-								<label class="form-check-label" for="quantosAdultos5">
-									5. Nao se aplica
-							</label>
-							</div>
-
-
-
-
-				</div>
-				<div class="form-group col-md-3">
-					<span class = "label label-warning">54. Onde iniciou o uso dessa substancia?</span>
-					<div class="form-check">
-								<input class="form-check-input" type="radio" name="inicioUso" id="inicioUso1"  value="escola" >
-								<label class="form-check-label" for="inicioUso1">
-									1. Escola
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="inicioUso" id="inicioUso2"   value="festa">
-								<label class="form-check-label" for="inicioUso2">
-									2. Festa
-							</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="inicioUso" id="inicioUso3"   value="na propria residencia">
-								<label class="form-check-label" for="inicioUso3">
-									3. Na propria residencia
-							</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="inicioUso" id="inicioUso4"   value="casa de amigos">
-								<label class="form-check-label" for="inicioUso4">
-									4. Casa de amigos
-							</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="inicioUso" id="inicioUso5"   value="bairro">
-								<label class="form-check-label" for="inicioUso5">
-									5. Bairro
-							</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="inicioUso" id="inicioUso6"   value="Outro">
-								<label class="form-check-label" for="inicioUso6">
-									6. Outro
-							</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="iniciouso" id="inicioUso7"   value="Sem Reposta">
-								<label class="form-check-label" for="inicioUso7">
-									7. Sem Resposta
-							</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="inicioUso" id="inicioUso8"   value="Nao se aplica" checked>
-								<label class="form-check-label" for="inicioUso8">
-									8. Nao se aplica
-							</label>
-							</div>
-
-				</div>
-				<div class="form-group col-md-3">
-					<span class = "label label-warning">55. Algum usuario esta em tratamento contra a dependencia quimica?</span>
-					<div class="form-check">
-								<input class="form-check-input" type="radio" name="tratamentoDep" id="tratamentoDep1"  value="Sim" >
-								<label class="form-check-label" for="tratamentoDep1">
-									1. Sim
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="tratamentoDep" id="tratamentoDep2"   value="Nao">
-								<label class="form-check-label" for="tratamentoDep2">
-									2. Nao
-							</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="tratamentoDep" id="tratamentoDep3"   value="Sem Resposta">
-								<label class="form-check-label" for="tratamentoDep3">
-									3. Sem Resposta
-							</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="tratamentoDep" id="tratamentoDep4"   value="nao se aplica" checked>
-								<label class="form-check-label" for="tratamentoDep4">
-									4. Nao se aplica
-							</label>
-							</div>
-
-
-				</div>
-
-
-
-
-			</div>
-			
-
 			
 			<div class = "form-row">
 						<div class="form-group col-md-12 bg-primary text-white">
@@ -1393,36 +1191,6 @@ function verificaReclusao(value){
 						</div>
 
 			</div>
-			<div class="form-group col-md-3">
-					<span class = "label label-warning">56. Tem acesso a internet?</span>
-					<div class="form-check">
-								<input class="form-check-input" type="radio" name="acessoInternet" id="acessoInternet1"  value="Sim" >
-								<label class="form-check-label" for="acessoInternet1">
-									1. Sim
-								</label>
-					</div>
-					<div class="form-check">
-								<input class="form-check-input" type="radio" name="acessoInternet" id="acessoInternet2"  value="nao" >
-								<label class="form-check-label" for="acessoInternet2">
-									2. Nao
-								</label>
-					</div>
-					<div class="form-check">
-								<input class="form-check-input" type="radio" name="acessoInternet" id="acessoInternet3"  value="sem resposta" >
-								<label class="form-check-label" for="acessoInternet3">
-									3. Sem resposta
-								</label>
-					</div>
-					<div class="form-check">
-								<input class="form-check-input" type="radio" name="acessoInternet" id="acessoInternet4"  value="nao se aplica" checked>
-								<label class="form-check-label" for="acessoInternet3">
-									4. Nao se aplica
-								</label>
-					</div>
-
-		
-			</div>
-
 			<div class = "form-row">
 						<div class="form-group col-md-12 bg-primary text-white">
 						<h1><b>Outras informações e conhecimentos - Questões de 76 a 100</b></h1>
