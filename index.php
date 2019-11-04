@@ -1649,24 +1649,508 @@ function verificaInternet(value) {
 			</div>
 			<div class="form-group col-md-3">
 					<span class = "label label-warning">61. Algum responsavel verifica os acessos?</span>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="verifAcessos" id="verifAcessos1"  value="sim"> 
+								<label class="form-check-label" for="verifAcessos1">
+									1. Sim
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="verifAcessos" id="verifAcessos2"  value="nao"> 
+								<label class="form-check-label" for="verifAcessos2">
+									2. Nao
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="verifAcessos" id="verifAcessos3"  value="sem resposta"> 
+								<label class="form-check-label" for="verifAcessos3">
+									3. Sem resposta
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="verifAcessos" id="verifAcessos4"  value="nao se aplica" checked> 
+								<label class="form-check-label" for="verifAcessos4">
+									4. Nao se aplica
+								</label>
+					</div>
 
 			</div>
 			<div class="form-group col-md-3">
 					<span class = "label label-warning">62. Com que frequencia?</span>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="freqVerifAcessos" id="freqVerifAcessos1"  value="em todos os acessos"> 
+								<label class="form-check-label" for="freqVerifAcessos1">
+									1. Em todos os acessos
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="freqVerifAcessos" id="freqVerifAcessos2"  value="diariamente"> 
+								<label class="form-check-label" for="freqVerifAcessos2">
+									2. Diariamente
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="freqVerifAcessos" id="freqVerifAcessos3"  value="uma vez por semana"> 
+								<label class="form-check-label" for="freqVerifAcessos3">
+									3. Uma vez por semana
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="freqVerifAcessos" id="freqVerifAcessos4"  value="uma vez por mes"> 
+								<label class="form-check-label" for="freqVerifAcessos4">
+									4. Uma vez por mes
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="freqVerifAcessos" id="freqVerifAcessos5"  value="aleatoriamente"> 
+								<label class="form-check-label" for="freqVerifAcessos5">
+									5. Aleatoriamente
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="freqVerifAcessos" id="freqVerifAcessos6"  value="nunca"> 
+								<label class="form-check-label" for="freqVerifAcessos6">
+									6. Nunca
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="freqVerifAcessos" id="freqVerifAcessos7"  value="sem resposta"> 
+								<label class="form-check-label" for="freqVerifAcessos7">
+									7. Sem resposta
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="freqVerifAcessos" id="freqVerifAcessos8"  value="nao se aplica" checked> 
+								<label class="form-check-label" for="freqVerifAcessos8">
+									8. Nao se aplica
+								</label>
+					</div>
 
 			</div>
 			<div class="form-group col-md-3">
 					<span class = "label label-warning">63. Eles frequentam salas de bate papo ou conversam com pessoas desconhecidas pela internet?</span>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="usamBatePapo" id="usamBatePapo1"  value="sim"> 
+								<label class="form-check-label" for="usamBatePapo1">
+									1. Sim
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="usamBatePapo" id="usamBatePapo2"  value="nao"> 
+								<label class="form-check-label" for="usamBatePapo2">
+									2. Nao
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="usamBatePapo" id="usamBatePapo3"  value="nao sabe"> 
+								<label class="form-check-label" for="usamBatePapo3">
+									3. Nao sabe
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="usamBatePapo" id="usamBatePapo4"  value="sem resposta"> 
+								<label class="form-check-label" for="usamBatePapo4">
+									4. Sem resposta
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="usamBatePapo" id="usamBatePapo5"  value="nao se aplica" checked> 
+								<label class="form-check-label" for="usamBatePapo5">
+									5. Nao se aplica
+								</label>
+					</div>
+					
+			</div>
+			<div class = "form-row">
+				<div class="form-group col-md-12">
 
+				</div>
+			</div>
+			<div class = "form-row">
+				<div class="form-group col-md-3">
+						<span class = "label label-info">64 - Horas sozinhas em casa? </span>
+						<select class="form-control" name="sozinhas" id = "sozinhas"  required>
+							<option selected>Escolha uma Opção...</option>
+							<option value="nenhuma">1 - Nenhuma</option>
+							<option value="menos de 1 hora">2 - Menos de 1 hora</option>
+							<option value="de 1 a 3 horas">3 - De 1 a 3 horas</option>
+							<option value="de 3 a 5 horas">4 - De 3 a 5 horas</option>
+							<option value="mais de 5 horas">5 - Mais de 5 horas</option>
+							<option value="sem resposta">6 - Sem resposta</option>
+							<option value="nao se aplica">7 - Nao se aplica</option>
+
+						</select>
+				</div>
+				<div class="form-group col-md-3">
+						<span class = "label label-info">65 - Horas efetivas com  Pai/padrasto? </span>
+						<select class="form-control" name="tempoPai" id = "tempoPai"  required>
+							<option selected>Escolha uma Opção...</option>
+							<option value="nenhuma">1 - Nenhuma</option>
+							<option value="menos de 1 hora">2 - Menos de 1 hora</option>
+							<option value="de 1 a 3 horas">3 - De 1 a 3 horas</option>
+							<option value="de 3 a 5 horas">4 - De 3 a 5 horas</option>
+							<option value="mais de 5 horas">5 - Mais de 5 horas</option>
+							<option value="sem resposta">6 - Sem resposta</option>
+							<option value="nao se aplica">7 - Nao se aplica</option>
+
+						</select>
+				</div>
+				<div class="form-group col-md-3">
+						<span class = "label label-info">66 - Horas efetivas com a Mae/madrasta? </span>
+						<select class="form-control" name="tempoMae" id = "tempoMae"  required>
+							<option selected>Escolha uma Opção...</option>
+							<option value="nenhuma">1 - Nenhuma</option>
+							<option value="menos de 1 hora">2 - Menos de 1 hora</option>
+							<option value="de 1 a 3 horas">3 - De 1 a 3 horas</option>
+							<option value="de 3 a 5 horas">4 - De 3 a 5 horas</option>
+							<option value="mais de 5 horas">5 - Mais de 5 horas</option>
+							<option value="sem resposta">6 - Sem resposta</option>
+							<option value="nao se aplica">7 - Nao se aplica</option>
+
+						</select>
+				</div>
+				<div class="form-group col-md-3">
+						<span class = "label label-info">67 - Horas efetivas com outro responsavel? </span>
+						<select class="form-control" name="outroResp" id = "outroResp"  required>
+							<option selected>Escolha uma Opção...</option>
+							<option value="nenhuma">1 - Nenhuma</option>
+							<option value="menos de 1 hora">2 - Menos de 1 hora</option>
+							<option value="de 1 a 3 horas">3 - De 1 a 3 horas</option>
+							<option value="de 3 a 5 horas">4 - De 3 a 5 horas</option>
+							<option value="mais de 5 horas">5 - Mais de 5 horas</option>
+							<option value="sem resposta">6 - Sem resposta</option>
+							<option value="nao se aplica">7 - Nao se aplica</option>
+
+						</select>
+				</div>
+				<div class="form-group col-md-3">
+					<span class = "label label-warning">68. Educacao/disciplina da crianca/adolescente</span>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="disciplina" id="disciplina1"  value="dialogo"> 
+								<label class="form-check-label" for="disciplina1">
+									1. Dialogo
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="disciplina" id="disciplina2"  value="castigo"> 
+								<label class="form-check-label" for="disciplina2">
+									2. Castigo
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="disciplina" id="disciplina3"  value="castigo fisico"> 
+								<label class="form-check-label" for="disciplina3">
+									3. Castigo fisico
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="disciplina" id="disciplina4"  value="nenhum"> 
+								<label class="form-check-label" for="disciplina4">
+									4. Nenhum
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="disciplina" id="disciplina5"  value="outro"> 
+								<label class="form-check-label" for="disciplina5">
+									5. Outro
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="disciplina" id="disciplina6"  value="sem resposta"> 
+								<label class="form-check-label" for="disciplina6">
+									6. Sem resposta
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="disciplina" id="disciplina7"  value="nao se aplica" checked> 
+								<label class="form-check-label" for="disciplina7">
+									7. Nao se aplica
+								</label>
+					</div>
+
+				
+				</div>
+				<div class="form-group col-md-3">
+					<span class = "label label-warning">69. Crianca/adolescente com pais separados(contato).</span>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="paisSeparados" id="paisSeparados1"  value="visita livre"> 
+								<label class="form-check-label" for="paisSeparados1">
+									1. Visita Livre
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="paisSeparados" id="paisSeparados2"  value="nos finais de semana"> 
+								<label class="form-check-label" for="paisSeparados2">
+									2. Nos finais de semana
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="paisSeparados" id="paisSeparados3"  value="finais de semana alternados"> 
+								<label class="form-check-label" for="paisSeparados3">
+									3. Finais de semana alternados
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="paisSeparados" id="paisSeparados4"  value="uma vez por mes"> 
+								<label class="form-check-label" for="paisSeparados4">
+									4. Uma vez por mes
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="paisSeparados" id="paisSeparados5"  value="guarda compartilhada"> 
+								<label class="form-check-label" for="paisSeparados5">
+									5. Guarda compartilhada (dec. jud.)
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="paisSeparados" id="paisSeparados6"  value="nenhuma"> 
+								<label class="form-check-label" for="paisSeparados6">
+									6. Nenhuma
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="paisSeparados" id="paisSeparados7"  value="nunca conheceu genitor"> 
+								<label class="form-check-label" for="paisSeparados7">
+									7. Nunca conheceu genitor
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="paisSeparados" id="paisSeparados8"  value="outro"> 
+								<label class="form-check-label" for="paisSeparados8">
+									8. Outro
+								</label>
+					</div>
+
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="paisSeparados" id="paisSeparados9"  value="sem resposta"> 
+								<label class="form-check-label" for="paisSeparados9">
+									9. Sem resposta
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="paisSeparados" id="paisSeparados10"  value="nao se aplica" checked> 
+								<label class="form-check-label" for="paisSeparados10">
+									10. Nao se aplica
+								</label>
+					</div>
+
+				</div>
+				<div class="form-group col-md-3">
+					<span class = "label label-warning">70. caso de gravidez Crianca/adolescente?.</span>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="gravidezAdol" id="gravidezAdol1"  value="sim, houve"> 
+								<label class="form-check-label" for="gravidezAdol1">
+									1. Sim, houve
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="gravidezAdol" id="gravidezAdol2"  value="sim, atualmente"> 
+								<label class="form-check-label" for="gravidezAdol2">
+									2. Sim, atualmente
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="gravidezAdol" id="gravidezAdol3"  value="nao"> 
+								<label class="form-check-label" for="gravidezAdo3">
+									3. Nao
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="gravidezAdol" id="gravidezAdol4"  value="sem resposta"> 
+								<label class="form-check-label" for="gravidezAdol4">
+									4. Sem resposta
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="gravidezAdol" id="gravidezAdol5"  value="nao se aplica" checked> 
+								<label class="form-check-label" for="gravidezAdol5">
+									5. Nao se aplica
+								</label>
+					</div>
+
+				</div>
+				<div class="form-group col-md-3">
+					<span class = "label label-warning">71. Qual a idade caso de gravidez Crianca/adolescente?.</span>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="idadeAdolGrav" id="idadeAdolGrav1"  value="de 8 a 10"> 
+								<label class="form-check-label" for="idadeAdolGrav1">
+									1. De 8 a 10
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="idadeAdolGrav" id="idadeAdolGrav2"  value="de 11 a 12"> 
+								<label class="form-check-label" for="idadeAdolGrav2">
+									2. De 11 a 12
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="idadeAdolGrav" id="idadeAdolGrav3"  value="de 13 a 14"> 
+								<label class="form-check-label" for="idadeAdolGrav3">
+									3. De 13 a 14
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="idadeAdolGrav" id="idadeAdolGrav4"  value="de 15 a 16"> 
+								<label class="form-check-label" for="idadeAdolGrav4">
+									4. De 15 a 16
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="idadeAdolGrav" id="idadeAdolGrav5"  value="17 anos"> 
+								<label class="form-check-label" for="idadeAdolGrav5">
+									5. 17 anos
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="idadeAdolGrav" id="idadeAdolGrav6"  value="sem resposta"> 
+								<label class="form-check-label" for="idadeAdolGrav6">
+									6. Sem resposta
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="idadeAdolGrav" id="idadeAdolGrav7"  value="nao se aplica" checked> 
+								<label class="form-check-label" for="idadeAdolGrav7">
+									7. Nao se aplica
+								</label>
+					</div>
+
+				</div>
+			</div>
+			<div class = "form-row">
+				<div class="form-group col-md-12">
+
+				</div>
 			</div>
 
+			<div class = "form-row">
+				<div class="form-group col-md-3">
+					<span class = "label label-warning">72. Crianca/adolescente com vida em risco?</span>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="vidaEmRisco" id="vidaEmRisco1"  value="sim"> 
+								<label class="form-check-label" for="vidaEmRisco1">
+									1. Sim
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="vidaEmRisco" id="vidaEmRisco2"  value="nao"> 
+								<label class="form-check-label" for="vidaEmRisco2">
+									2. Nao
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="vidaEmRisco" id="vidaEmRisco3"  value="sem resposta"> 
+								<label class="form-check-label" for="vidaEmRisco3">
+									3. Sem resposta
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="vidaEmRisco" id="vidaEmRisco4"  value="nao se aplica" checked> 
+								<label class="form-check-label" for="vidaEmRisco4">
+									4. Nao se aplica
+								</label>
+					</div>
+
+					<div class="form-check">
+						<label>Se sim, qual:</label>
+						<input class="form-control" type="text" name="acaoVR" value="nao se aplica">
+					</div>
+
+
+				</div>
+				<div class="form-group col-md-3">
+					<span class = "label label-warning">73. Conversa sobre sexualidade?</span>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="conversaSex" id="conversaSex1"  value="sim"> 
+								<label class="form-check-label" for="conversaSex1">
+									1. Sim
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="conversaSex" id="conversaSex2"  value="nao"> 
+								<label class="form-check-label" for="conversaSex2">
+									2. Nao
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="conversaSex" id="conversaSex3"  value="sem resposta"> 
+								<label class="form-check-label" for="conversaSex3">
+									3. Sem Resposta
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="conversaSex" id="conversaSex4"  value="nao se aplica" checked> 
+								<label class="form-check-label" for="conversaSex4">
+									4. Nao se aplica
+								</label>
+					</div>
+
+
+				</div>
+				<div class="form-group col-md-3">
+					<span class = "label label-warning">74. Conversa sobre drogas?</span>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="conversaDrogas" id="conversaDrogas1"  value="sim"> 
+								<label class="form-check-label" for="conversaDrogas1">
+									1. Sim
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="conversaDrogas" id="conversaDrogas2"  value="nao"> 
+								<label class="form-check-label" for="conversaDrogas2">
+									2. Nao
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="conversaDrogas" id="conversaDrogas3"  value="sem resposta"> 
+								<label class="form-check-label" for="conversaDrogas3">
+									3. Sem Resposta
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="conversaDrogas" id="conversaDrogas4"  value="nao se aplica" checked> 
+								<label class="form-check-label" for="conversaDrogas4">
+									4. Nao se aplica
+								</label>
+					</div>
+
+
+				</div>
+				<div class="form-group col-md-3">
+					<span class = "label label-warning">75. Conversa sobre violencia?</span>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="conversaViolencia" id="conversaViolencia1"  value="sim"> 
+								<label class="form-check-label" for="conversaViolencia1">
+									1. Sim
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="conversaViolencia" id="conversaViolencia2"  value="nao"> 
+								<label class="form-check-label" for="conversaViolencia2">
+									2. Nao
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="conversaViolencia" id="conversaViolencia3"  value="sem resposta"> 
+								<label class="form-check-label" for="conversaViolencia3">
+									3. Sem Resposta
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="conversaViolencia" id="conversaViolencia4"  value="nao se aplica" checked> 
+								<label class="form-check-label" for="conversaViolencia4">
+									4. Nao se aplica
+								</label>
+					</div>
+	
+
+				</div>
+			</div>
 			<div class = "form-row">
 						<div class="form-group col-md-12 bg-primary text-white">
 						<h1><b>Outras informações e conhecimentos - Questões de 76 a 100</b></h1>
 						</div>
 
 			</div>
-
 
 
 

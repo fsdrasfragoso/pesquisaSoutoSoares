@@ -64,6 +64,23 @@ $conteudoInternet = $_POST['conteudoInternet'];
 $freqInternet = $_POST['freqInternet'];
 $horasInternet = $_POST['horasInternet'];
 $horasEletronicos = $_POST['horasEletronicos'];
+$verifAcessos = $_POST['verifAcessos'];
+$freqVerifAcessos = $_POST['freqVerifAcessos'];
+$usamBatePapo = $_POST['usamBatePapo'];
+$sozinhas = $_POST['sozinhas'];
+$tempoPai = $_POST['tempoPai'];
+$tempoMae = $_POST['tempoMae'];
+$outroResp = $_POST['outroResp'];
+$disciplina = $_POST['disciplina'];
+$paisSeparados = $_POST['paisSeparados'];
+$gravidezAdol = $_POST['gravidezAdol'];
+$idadeAdolGrav = $_POST['idadeAdolGrav'];
+$vidaEmRisco = $_POST['vidaEmRisco'];
+$acaoVR = $_POST['acaoVR'];
+$conversaSex = $_POST['conversaSex'];
+$conversaDrogas = $_POST['conversaDrogas'];
+$conversaViolencia = $_POST['conversaViolencia'];
+
 
 
 
@@ -117,7 +134,7 @@ if(!empty($_POST['destinoLixo'])){
 
 
 
-$sql = "insert into aluno(data, responsavel, zona, bairro, comunidade, tipoImovel, regOcupImovel, tipoConstr, abastAgua, tratamentoAgua, coletaEsgoto, destinoLixo, segPublica, numeroPessoas, constFamiliar, rendaFamilia, contribRendaFamiliar, carro, moto, bicicleta, maqLavar, tanquinho, geladeira, lavLoucas, micOndas, fogGas, dvd, tv, apTvcabo, interBl, interCell, computador, notebook, tablet, som, telFxo, telCell, telCell12a, telCell18a, ventilador, arCondicionado, escolMae, escolPai, escolOutroResp, sitOcupMae, sitOcupPai, sitOcupOutro, penaJudicial, regimePena, responsavelPena, possuiDoenca, usoSubstancias, quantosAdultos, inicioUso, tratamentoDep, acessoInternet, localAcesso, tipoEquipamento, conteudoInternet, freqInternet, horasInternet, horasEletronicos) values('$data','$responsavel', '$zona','$bairro','$comunidade', '$tipoImovel', '$regOcupImovel', '$tipoConstr', '$abastAgua', '$tratamentoAgua', '$coletaEsgoto', '$destinoLixo', '$segPublica', '$numeroPessoas', '$constFamiliar', '$rendaFamilia', '$contribRendaFamiliar', '$carro','$moto', '$bicicleta', '$maqLavar', '$tanquinho', '$geladeira', '$lavLoucas', '$micOndas', '$fogGas', '$dvd', '$tv', '$apTvcabo', '$interBl', '$interCell', '$computador', '$notebook', '$tablet', '$som', '$telFxo', '$telCell', '$telCell12a', '$telCell18a', '$ventilador', '$arCondicionado', '$escolMae', '$escolPai', '$escolOutroResp', '$sitOcupMae', '$sitOcupPai', '$sitOcupOutro', '$penaJudicial', '$regimePena', '$responsavelPena', '$possuiDoenca', '$usoSubstancias', '$quantosAdultos', '$inicioUso', '$tratamentoDep', '$acessoInternet', '$localAcesso', '$tipoEquipamento', '$conteudoInternet', '$freqInternet', '$horasInternet', '$horasEletronicos')";
+$sql = "insert into aluno(data, responsavel, zona, bairro, comunidade, tipoImovel, regOcupImovel, tipoConstr, abastAgua, tratamentoAgua, coletaEsgoto, destinoLixo, segPublica, numeroPessoas, constFamiliar, rendaFamilia, contribRendaFamiliar, carro, moto, bicicleta, maqLavar, tanquinho, geladeira, lavLoucas, micOndas, fogGas, dvd, tv, apTvcabo, interBl, interCell, computador, notebook, tablet, som, telFxo, telCell, telCell12a, telCell18a, ventilador, arCondicionado, escolMae, escolPai, escolOutroResp, sitOcupMae, sitOcupPai, sitOcupOutro, penaJudicial, regimePena, responsavelPena, possuiDoenca, usoSubstancias, quantosAdultos, inicioUso, tratamentoDep, acessoInternet, localAcesso, tipoEquipamento, conteudoInternet, freqInternet, horasInternet, horasEletronicos, verifAcessos, freqVerifAcessos, usamBatePapo, sozinhas, tempoPai, tempoMae, outroResp, disciplina, paisSeparados, gravidezAdol, idadeAdolGrav, vidaEmRisco, acaoVR, conversaSex, conversaDrogas, conversaViolencia) values('$data','$responsavel', '$zona','$bairro','$comunidade', '$tipoImovel', '$regOcupImovel', '$tipoConstr', '$abastAgua', '$tratamentoAgua', '$coletaEsgoto', '$destinoLixo', '$segPublica', '$numeroPessoas', '$constFamiliar', '$rendaFamilia', '$contribRendaFamiliar', '$carro','$moto', '$bicicleta', '$maqLavar', '$tanquinho', '$geladeira', '$lavLoucas', '$micOndas', '$fogGas', '$dvd', '$tv', '$apTvcabo', '$interBl', '$interCell', '$computador', '$notebook', '$tablet', '$som', '$telFxo', '$telCell', '$telCell12a', '$telCell18a', '$ventilador', '$arCondicionado', '$escolMae', '$escolPai', '$escolOutroResp', '$sitOcupMae', '$sitOcupPai', '$sitOcupOutro', '$penaJudicial', '$regimePena', '$responsavelPena', '$possuiDoenca', '$usoSubstancias', '$quantosAdultos', '$inicioUso', '$tratamentoDep', '$acessoInternet', '$localAcesso', '$tipoEquipamento', '$conteudoInternet', '$freqInternet', '$horasInternet', '$horasEletronicos', '$verifAcessos', '$freqVerifAcessos', '$usamBatePapo', '$sozinhas', '$tempoPai', '$tempoMae', '$outroResp', '$disciplina', '$paisSeparados', '$gravidezAdol', '$idadeAdolGrav', '$vidaEmRisco', '$acaoVR', '$conversaSex', '$conversaDrogas', '$conversaViolencia')";
 $count = $con->exec($sql);
 $rows = $con->query("select count(*) from aluno")->fetchColumn();
 
