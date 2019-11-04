@@ -78,6 +78,16 @@ function verificaReclusao(value){
 		responsavelPena6.disabled = true;
 	}
 };
+function verificaInternet(value) {
+	var acessoInternet = document.getElementById("acessoInternet");
+	if (value == "sim") {
+		localAcesso.disabled = false;
+		
+
+	}else if(value == "nao") {
+
+	}
+};
 
 </script>
 </head>
@@ -1396,7 +1406,7 @@ function verificaReclusao(value){
 			<div class="form-group col-md-3">
 					<span class = "label label-warning">56. Tem acesso a internet?</span>
 					<div class="form-check">
-								<input class="form-check-input" type="radio" name="acessoInternet" id="acessoInternet1"  value="Sim" >
+								<input class="form-check-input" type="radio" name="acessoInternet" id="acessoInternet1"  value="sim" onClick="verificaInternet(this.value)"> 
 								<label class="form-check-label" for="acessoInternet1">
 									1. Sim
 								</label>
@@ -1414,13 +1424,240 @@ function verificaReclusao(value){
 								</label>
 					</div>
 					<div class="form-check">
-								<input class="form-check-input" type="radio" name="acessoInternet" id="acessoInternet4"  value="nao se aplica" checked>
-								<label class="form-check-label" for="acessoInternet3">
+								<input class="form-check-input" type="radio" name="acessoInternet" id="acessoInternet4"  value="nao se aplica" onchange="verificaInternet(this.value)"checked>
+								<label class="form-check-label" for="acessoInternet4">
 									4. Nao se aplica
 								</label>
 					</div>
+					<div class="form-check">
+						<label>Local de Acesso:</label>
+						<input class="form-control" type="text" name="localAcesso" value="nao se aplica">
+					</div>
+					<div class="form-check">
+						<label>Em qual tipo de equipamento? </label>
+						<select class="form-control" name="tipoEquipamento" id = "tipoEquipamento">
+							<option selected>Escolha uma Opção...</option>
+							<option value="computador">1 - Computador de mesa</option>
+							<option value="notebook">2 - Notebook</option>
+							<option value="celular">3 - Celular ou Tablet</option>
+						</select>
+					</div>
+
 
 		
+			</div>
+			<div class="form-group col-md-3">
+					<span class = "label label-warning">57. Que tipo de conteudo elas acessam?</span>
+
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="conteudoInternet" id="conteudoInternet1"  value="sites de entretenimento"> 
+								<label class="form-check-label" for="conteudoInternet1">
+									1. Sites de entretenimento
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="conteudoInternet" id="conteudoInternet2"  value="redes sociais"> 
+								<label class="form-check-label" for="conteudoInternet2">
+									2. Redes sociais
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="conteudoInternet" id="conteudoInternet3"  value="jogos"> 
+								<label class="form-check-label" for="conteudoInternet3">
+									3. Jogos
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="conteudoInternet" id="conteudoInternet4"  value="pesquisa escolar"> 
+								<label class="form-check-label" for="conteudoInternet4">
+									4. Pesquisa escolar
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="conteudoInternet" id="conteudoInternet5"  value="outro"> 
+								<label class="form-check-label" for="conteudoInternet5">
+									5. Outro
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="conteudoInternet" id="conteudoInternet6"  value="nao sabe"> 
+								<label class="form-check-label" for="conteudoInternet6">
+									6. Nao sabe
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="conteudoInternet" id="conteudoInternet7"  value="sem resposta"> 
+								<label class="form-check-label" for="conteudoInternet7">
+									7. Sem resposta
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="conteudoInternet" id="conteudoInternet8"  value="nao se aplica" checked> 
+								<label class="form-check-label" for="conteudoInternet8">
+									8. Nao se aplica
+								</label>
+					</div>
+
+
+			</div>
+			<div class="form-group col-md-3">
+					<span class = "label label-warning">58. Com que frequencia elas acessam a internet?</span>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="freqInternet" id="freqInternet1"  value="nunca"> 
+								<label class="form-check-label" for="freqInternet1">
+									1. Nunca
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="freqInternet" id="freqInternet2"  value="uma vez por semana"> 
+								<label class="form-check-label" for="freqInternet2">
+									2. Uma vez por semana
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="freqInternet" id="freqInternet3"  value="ate 3 vezes por semana"> 
+								<label class="form-check-label" for="freqInternet3">
+									3. Ate 3 vezes por semana
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="freqInternet" id="freqInternet4"  value="de 4 a 6 vezes por semana"> 
+								<label class="form-check-label" for="freqInternet4">
+									4. De 4 a 6 vezes por semana
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="freqInternet" id="freqInternet5"  value="todos os dias"> 
+								<label class="form-check-label" for="freqInternet5">
+									5. Todos os dias
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="freqInternet" id="freqInternet6"  value="nao sabe"> 
+								<label class="form-check-label" for="freqInternet6">
+									6. Nao sabe
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="freqInternet" id="freqInternet7"  value="sem resposta"> 
+								<label class="form-check-label" for="freqInternet7">
+									7. Sem resposta
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="freqInternet" id="freqInternet8"  value="nao se aplica" checked> 
+								<label class="form-check-label" for="freqInternet8">
+									8. Nao se aplica
+								</label>
+					</div>
+
+
+
+			</div>
+			<div class="form-group col-md-3">
+					<span class = "label label-warning">59. Quantas horas por dia elas ficam na internet?</span>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="horasInternet" id="horasInternet1"  value="ate 1 hora"> 
+								<label class="form-check-label" for="horasInternet1">
+									1. Ate 1 hora
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="horasInternet" id="horasInternet2"  value="de  1 a 3 horas"> 
+								<label class="form-check-label" for="horasInternet2">
+									2. De 1 a 3 horas
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="horasInternet" id="horasInternet3"  value="de 3 a 5 horas"> 
+								<label class="form-check-label" for="horasInternet3">
+									3. De 3 a 5 horas
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="horasInternet" id="horasInternet4"  value="mais de 5 horas"> 
+								<label class="form-check-label" for="horasInternet4">
+									4. Mais de 5 horas
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="horasInternet" id="horasInternet5"  value="nao sabe"> 
+								<label class="form-check-label" for="horasInternet5">
+									5. Nao sabe
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="horasInternet" id="horasInternet6"  value="sem resposta"> 
+								<label class="form-check-label" for="horasInternet6">
+									6. Sem resposta
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="horasInternet" id="horasInternet7"  value="nao se aplica" checked> 
+								<label class="form-check-label" for="horasInternet7">
+									7. Nao se aplica
+								</label>
+					</div>
+
+
+			</div>
+			<div class="form-group col-md-3">
+					<span class = "label label-warning">60. Quantas horas por dia elas utilizam eletronicos?</span>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="horasEletronicos" id="horasEletronicos1"  value="ate 1 hora"> 
+								<label class="form-check-label" for="horasEletronicos1">
+									1. Ate 1 hora
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="horasEletronicos" id="horasEletronicos2"  value="de 1 a 3 horas"> 
+								<label class="form-check-label" for="horasEletronicos2">
+									2. De 1 a 3 horas
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="horasEletronicos" id=i"horasEletronicos3"  value="de 3 a 5 horas"> 
+								<label class="form-check-label" for="horasEletronicos3">
+									3. De 3 a 5 horas
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="horasEletronicos" id="horasEletronicosi4"  value="mais de 5 horas"> 
+								<label class="form-check-label" for="horasEletronicos4">
+									4. Mais de 5 horas
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="horasEletronicos" id="horasEletronicos5"  value="nao sabe"> 
+								<label class="form-check-label" for="horasEletronicos5">
+									5. Nao sabe
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="horasEletronicos" id="horasEletronicos6"  value="sem resposta"> 
+								<label class="form-check-label" for="horasEletronicos6">
+									6. Sem resposta
+								</label>
+					</div>
+					<div class="form-check">
+								<input class="form-check-input" type="radio" name="horasEletronicos" id="horasEletronicos7"  value="nao se aplica" checked> 
+								<label class="form-check-label" for="horasEletronicos7">
+									7. Nao se aplica
+								</label>
+					</div>
+
+			</div>
+			<div class="form-group col-md-3">
+					<span class = "label label-warning">61. Algum responsavel verifica os acessos?</span>
+
+			</div>
+			<div class="form-group col-md-3">
+					<span class = "label label-warning">62. Com que frequencia?</span>
+
+			</div>
+			<div class="form-group col-md-3">
+					<span class = "label label-warning">63. Eles frequentam salas de bate papo ou conversam com pessoas desconhecidas pela internet?</span>
+
 			</div>
 
 			<div class = "form-row">

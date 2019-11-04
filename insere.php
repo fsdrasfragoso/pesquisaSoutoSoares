@@ -58,6 +58,12 @@ $quantosAdultos = $_POST['quantosAdultos'];
 $inicioUso = $_POST['inicioUso'];
 $tratamentoDep = $_POST['tratamentoDep'];
 $acessoInternet = $_POST['acessoInternet'];
+$localAcesso = $_POST['localAcesso'];
+$tipoEquipamento = $_POST['tipoEquipamento'];
+$conteudoInternet = $_POST['conteudoInternet'];
+$freqInternet = $_POST['freqInternet'];
+$horasInternet = $_POST['horasInternet'];
+$horasEletronicos = $_POST['horasEletronicos'];
 
 
 
@@ -111,7 +117,7 @@ if(!empty($_POST['destinoLixo'])){
 
 
 
-$sql = "insert into aluno(data, responsavel, zona, bairro, comunidade, tipoImovel, regOcupImovel, tipoConstr, abastAgua, tratamentoAgua, coletaEsgoto, destinoLixo, segPublica, numeroPessoas, constFamiliar, rendaFamilia, contribRendaFamiliar, carro, moto, bicicleta, maqLavar, tanquinho, geladeira, lavLoucas, micOndas, fogGas, dvd, tv, apTvcabo, interBl, interCell, computador, notebook, tablet, som, telFxo, telCell, telCell12a, telCell18a, ventilador, arCondicionado, escolMae, escolPai, escolOutroResp, sitOcupMae, sitOcupPai, sitOcupOutro, penaJudicial, regimePena, responsavelPena, possuiDoenca, usoSubstancias, quantosAdultos, inicioUso, tratamentoDep, acessoInternet) values('$data','$responsavel', '$zona','$bairro','$comunidade', '$tipoImovel', '$regOcupImovel', '$tipoConstr', '$abastAgua', '$tratamentoAgua', '$coletaEsgoto', '$destinoLixo', '$segPublica', '$numeroPessoas', '$constFamiliar', '$rendaFamilia', '$contribRendaFamiliar', '$carro','$moto', '$bicicleta', '$maqLavar', '$tanquinho', '$geladeira', '$lavLoucas', '$micOndas', '$fogGas', '$dvd', '$tv', '$apTvcabo', '$interBl', '$interCell', '$computador', '$notebook', '$tablet', '$som', '$telFxo', '$telCell', '$telCell12a', '$telCell18a', '$ventilador', '$arCondicionado', '$escolMae', '$escolPai', '$escolOutroResp', '$sitOcupMae', '$sitOcupPai', '$sitOcupOutro', '$penaJudicial', '$regimePena', '$responsavelPena', '$possuiDoenca', '$usoSubstancias', '$quantosAdultos', '$inicioUso', '$tratamentoDep', '$acessoInternet')";
+$sql = "insert into aluno(data, responsavel, zona, bairro, comunidade, tipoImovel, regOcupImovel, tipoConstr, abastAgua, tratamentoAgua, coletaEsgoto, destinoLixo, segPublica, numeroPessoas, constFamiliar, rendaFamilia, contribRendaFamiliar, carro, moto, bicicleta, maqLavar, tanquinho, geladeira, lavLoucas, micOndas, fogGas, dvd, tv, apTvcabo, interBl, interCell, computador, notebook, tablet, som, telFxo, telCell, telCell12a, telCell18a, ventilador, arCondicionado, escolMae, escolPai, escolOutroResp, sitOcupMae, sitOcupPai, sitOcupOutro, penaJudicial, regimePena, responsavelPena, possuiDoenca, usoSubstancias, quantosAdultos, inicioUso, tratamentoDep, acessoInternet, localAcesso, tipoEquipamento, conteudoInternet, freqInternet, horasInternet, horasEletronicos) values('$data','$responsavel', '$zona','$bairro','$comunidade', '$tipoImovel', '$regOcupImovel', '$tipoConstr', '$abastAgua', '$tratamentoAgua', '$coletaEsgoto', '$destinoLixo', '$segPublica', '$numeroPessoas', '$constFamiliar', '$rendaFamilia', '$contribRendaFamiliar', '$carro','$moto', '$bicicleta', '$maqLavar', '$tanquinho', '$geladeira', '$lavLoucas', '$micOndas', '$fogGas', '$dvd', '$tv', '$apTvcabo', '$interBl', '$interCell', '$computador', '$notebook', '$tablet', '$som', '$telFxo', '$telCell', '$telCell12a', '$telCell18a', '$ventilador', '$arCondicionado', '$escolMae', '$escolPai', '$escolOutroResp', '$sitOcupMae', '$sitOcupPai', '$sitOcupOutro', '$penaJudicial', '$regimePena', '$responsavelPena', '$possuiDoenca', '$usoSubstancias', '$quantosAdultos', '$inicioUso', '$tratamentoDep', '$acessoInternet', '$localAcesso', '$tipoEquipamento', '$conteudoInternet', '$freqInternet', '$horasInternet', '$horasEletronicos')";
 $count = $con->exec($sql);
 $rows = $con->query("select count(*) from aluno")->fetchColumn();
 
