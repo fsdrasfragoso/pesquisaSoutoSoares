@@ -2151,6 +2151,159 @@ function verificaInternet(value) {
 						</div>
 
 			</div>
+			<div class = "form-row">
+				<div class="form-group col-md-3">
+						<span class = "label label-info">76 - Conhece C/A com problemas com drogas? </span>
+						<select class="form-control" name="probDrogas" id = "probDrogas"  required>
+							<option selected>Escolha uma Opção...</option>
+							<option value="sim">1 - Sim</option>
+							<option value="nao">2 - Nao</option>
+							<option value="nao sabe">3 - Nao sabe</option>
+							<option value="sem resposta">4 - Sem resposta</option>
+							<option value="nao se aplica">5 - Nao se aplica</option>
+							
+						</select>
+				</div>
+				<div class="form-group col-md-3">
+						<span class = "label label-info">77 - Conhece C/A que sofreu aborto induzido? </span>
+						<select class="form-control" name="abortoInduzido" id = "abortoInduzido"  required>
+							<option selected>Escolha uma Opção...</option>
+							<option value="sim">1 - Sim</option>
+							<option value="nao">2 - Nao</option>
+							<option value="nao sabe">3 - Nao sabe</option>
+							<option value="sem resposta">4 - Sem resposta</option>
+							<option value="nao se aplica">5 - Nao se aplica</option>
+							
+						</select>
+				</div>
+				<div class="form-group col-md-3">
+						<span class = "label label-info">78 - Conhece C/A que sofreu violencia sexual? </span>
+						<select class="form-control" name="violSexual" id = "violSexual"  required>
+							<option selected>Escolha uma Opção...</option>
+							<option value="sim">1 - Sim</option>
+							<option value="nao">2 - Nao</option>
+							<option value="nao sabe">3 - Nao sabe</option>
+							<option value="sem resposta">4 - Sem resposta</option>
+							<option value="nao se aplica">5 - Nao se aplica</option>
+							
+						</select>
+				</div>
+				<div class="form-group col-md-3">
+						<span class = "label label-info">79 - Conhece C/A que realiza trabalho infantojuvenil? </span>
+						<select class="form-control" name="trabInfanto" id = "trabInfanto"  required>
+							<option selected>Escolha uma Opção...</option>
+							<option value="sim">1 - Sim</option>
+							<option value="nao">2 - Nao</option>
+							<option value="nao sabe">3 - Nao sabe</option>
+							<option value="sem resposta">4 - Sem resposta</option>
+							<option value="nao se aplica">5 - Nao se aplica</option>
+							
+						</select>
+				</div>
+
+
+			</div>
+			<div class = "form-row">
+				<div class="form-group col-md-3">
+						<span class = "label label-info">80 - Participa do BOLSA FAMILIA? </span>
+						<select class="form-control" name="bolsaFam" id = "bolsaFam"  required>
+							<option selected>Escolha uma Opção...</option>
+							<option value="sim">1 - Sim</option>
+							<option value="nao">2 - Nao</option>
+							<option value="sem resposta">3 - Sem resposta</option>
+							<option value="nao se aplica">4 - Nao se aplica</option>
+							
+						</select>
+				</div>
+				<div class="form-group col-md-3">
+						<span class = "label label-info">81 - Serv. de Conv. e Fortalec. de Vinculos? </span>
+						<select class="form-control" name="servConv" id = "servConv"  required>
+							<option selected>Escolha uma Opção...</option>
+							<option value="sim">1 - Sim</option>
+							<option value="nao">2 - Nao</option>
+							<option value="sem resposta">3 - Sem resposta</option>
+							<option value="nao se aplica">4 - Nao se aplica</option>
+							
+						</select>
+				</div>
+				<div class="form-group col-md-3">
+						<span class = "label label-info">82 - Brasil sem fronteiras? </span>
+						<select class="form-control" name="brasilSemFront" id = "brasilSemFront"  required>
+							<option selected>Escolha uma Opção...</option>
+							<option value="sim">1 - Sim</option>
+							<option value="nao">2 - Nao</option>
+							<option value="sem resposta">3 - Sem resposta</option>
+							<option value="nao se aplica">4 - Nao se aplica</option>
+							
+						</select>
+				</div>
+				<div class="form-group col-md-3">
+						<span class = "label label-info">83 - Pronatec? </span>
+						<select class="form-control" name="pronatec" id = "pronatec"  required>
+							<option selected>Escolha uma Opção...</option>
+							<option value="sim">1 - Sim</option>
+							<option value="nao">2 - Nao</option>
+							<option value="sem resposta">3 - Sem resposta</option>
+							<option value="nao se aplica">4 - Nao se aplica</option>
+							
+						</select>
+				</div>
+
+
+			</div>
+			<div class = "form-row">
+				<div class="form-group col-md-3">
+						<span class = "label label-info">84 - Minha Casa Minha Vida? </span>
+						<select class="form-control" name="minhaCMV" id = "minhaCMV"  required>
+							<option selected>Escolha uma Opção...</option>
+							<option value="sim">1 - Sim</option>
+							<option value="nao">2 - Nao</option>
+							<option value="sem resposta">3 - Sem resposta</option>
+							<option value="nao se aplica">4 - Nao se aplica</option>
+							
+						</select>
+				</div>
+				<div class="form-group col-md-3">
+						<span class = "label label-info">85 - PROUNI? </span>
+						<select class="form-control" name="prouni" id = "prouni"  required>
+							<option selected>Escolha uma Opção...</option>
+							<option value="sim">1 - Sim</option>
+							<option value="nao">2 - Nao</option>
+							<option value="sem resposta">3 - Sem resposta</option>
+							<option value="nao se aplica">4 - Nao se aplica</option>
+							
+						</select>
+				</div>
+				<div class="form-group col-md-3">
+						<span class = "label label-info">86 - FIES? </span>
+						<select class="form-control" name="fies" id = "fies"  required>
+							<option selected>Escolha uma Opção...</option>
+							<option value="sim">1 - Sim</option>
+							<option value="nao">2 - Nao</option>
+							<option value="sem resposta">3 - Sem resposta</option>
+							<option value="nao se aplica">4 - Nao se aplica</option>
+							
+						</select>
+				</div>
+				<div class="form-group col-md-3">
+						<span class = "label label-info">87 - Outro? </span>
+						<select class="form-control" name="outro" id = "outro"  required>
+							<option selected>Escolha uma Opção...</option>
+							<option value="sim">1 - Sim</option>
+							<option value="nao">2 - Nao</option>
+							<option value="sem resposta">3 - Sem resposta</option>
+							<option value="nao se aplica">4 - Nao se aplica</option>
+							
+						</select>
+				</div>
+
+			</div>
+			<div class = "form-row">
+						<div class="form-group col-md-12 bg-primary text-white">
+						<h1><b>- - - - - - - - - - - - - - -  - - - - - - - - F I N A L - -  - - -- - - - - - - - - - - - - -</b></h1>
+						</div>
+
+			</div>
 
 
 
