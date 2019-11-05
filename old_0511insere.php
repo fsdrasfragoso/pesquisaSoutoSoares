@@ -92,21 +92,6 @@ $minhaCMV = $_POST['minhaCMV'];
 $prouni = $_POST['prouni'];
 $fies = $_POST['fies'];
 $outro = $_POST['outro'];
-$atendUbs = $_POST['atendUbs'];
-$morteCrianca = $_POST['morteCrianca'];
-$quando = $_POST['quando'];
-$causaMorte = $_POST['causaMorte'];
-$investViolDom = $_POST['investViolDom'];
-$campInform = $_POST['campInform'];
-$ampliarEsporte = $_POST['ampliarEsporte'];
-$sitCriAdol = $_POST['sitCriAdol'];
-$atuPoderPub = $_POST['atuPoderPub'];
-$eca = $_POST['eca'];
-$cmdca = $_POST['cmdca'];
-$consTutelar = $_POST['consTutelar'];
-$acessouCT = $_POST['acessouCT'];
-$trabalhoJovem = $_POST['trabalhoJovem'];
-$importAprendiz = $_POST['importAprendiz'];
 
 
 
@@ -162,7 +147,7 @@ if(!empty($_POST['destinoLixo'])){
 
 
 
-$sql = "insert into aluno(data, responsavel, zona, bairro, comunidade, tipoImovel, regOcupImovel, tipoConstr, abastAgua, tratamentoAgua, coletaEsgoto, destinoLixo, segPublica, numeroPessoas, constFamiliar, rendaFamilia, contribRendaFamiliar, carro, moto, bicicleta, maqLavar, tanquinho, geladeira, lavLoucas, micOndas, fogGas, dvd, tv, apTvcabo, interBl, interCell, computador, notebook, tablet, som, telFxo, telCell, telCell12a, telCell18a, ventilador, arCondicionado, escolMae, escolPai, escolOutroResp, sitOcupMae, sitOcupPai, sitOcupOutro, penaJudicial, regimePena, responsavelPena, possuiDoenca, usoSubstancias, quantosAdultos, inicioUso, tratamentoDep, acessoInternet, localAcesso, tipoEquipamento, conteudoInternet, freqInternet, horasInternet, horasEletronicos, verifAcessos, freqVerifAcessos, usamBatePapo, sozinhas, tempoPai, tempoMae, outroResp, disciplina, paisSeparados, gravidezAdol, idadeAdolGrav, vidaEmRisco, acaoVR, conversaSex, conversaDrogas, conversaViolencia, probDrogas, abortoInduzido, violSexual, trabInfanto, bolsaFam, servConv, brasilSemFront, pronatec, minhaCMV, prouni, fies, outro, atendUbs, morteCrianca, quando, causaMorte, investViolDom, campInform, ampliarEsporte, sitCriAdol, atuPoderPub, eca, cmdca, consTutelar, acessouCT, trabalhoJovem, importAprendiz) values('$data','$responsavel', '$zona','$bairro','$comunidade', '$tipoImovel', '$regOcupImovel', '$tipoConstr', '$abastAgua', '$tratamentoAgua', '$coletaEsgoto', '$destinoLixo', '$segPublica', '$numeroPessoas', '$constFamiliar', '$rendaFamilia', '$contribRendaFamiliar', '$carro','$moto', '$bicicleta', '$maqLavar', '$tanquinho', '$geladeira', '$lavLoucas', '$micOndas', '$fogGas', '$dvd', '$tv', '$apTvcabo', '$interBl', '$interCell', '$computador', '$notebook', '$tablet', '$som', '$telFxo', '$telCell', '$telCell12a', '$telCell18a', '$ventilador', '$arCondicionado', '$escolMae', '$escolPai', '$escolOutroResp', '$sitOcupMae', '$sitOcupPai', '$sitOcupOutro', '$penaJudicial', '$regimePena', '$responsavelPena', '$possuiDoenca', '$usoSubstancias', '$quantosAdultos', '$inicioUso', '$tratamentoDep', '$acessoInternet', '$localAcesso', '$tipoEquipamento', '$conteudoInternet', '$freqInternet', '$horasInternet', '$horasEletronicos', '$verifAcessos', '$freqVerifAcessos', '$usamBatePapo', '$sozinhas', '$tempoPai', '$tempoMae', '$outroResp', '$disciplina', '$paisSeparados', '$gravidezAdol', '$idadeAdolGrav', '$vidaEmRisco', '$acaoVR', '$conversaSex', '$conversaDrogas', '$conversaViolencia', '$probDrogas', '$abortoInduzido', '$violSexual', '$trabInfanto', '$bolsaFam', '$servConv', '$brasilSemFront', '$pronatec', '$minhaCMV', '$prouni', '$fies', '$outro', '$atendUbs', '$morteCrianca', '$quando', '$causaMorte', '$investViolDom', '$campInform', '$ampliarEsporte', '$sitCriAdol', '$atuPoderPub', '$eca', '$cmdca', '$consTutelar', '$acessouCT', '$trabalhoJovem', '$importAprendiz')";
+$sql = "insert into aluno(data, responsavel, zona, bairro, comunidade, tipoImovel, regOcupImovel, tipoConstr, abastAgua, tratamentoAgua, coletaEsgoto, destinoLixo, segPublica, numeroPessoas, constFamiliar, rendaFamilia, contribRendaFamiliar, carro, moto, bicicleta, maqLavar, tanquinho, geladeira, lavLoucas, micOndas, fogGas, dvd, tv, apTvcabo, interBl, interCell, computador, notebook, tablet, som, telFxo, telCell, telCell12a, telCell18a, ventilador, arCondicionado, escolMae, escolPai, escolOutroResp, sitOcupMae, sitOcupPai, sitOcupOutro, penaJudicial, regimePena, responsavelPena, possuiDoenca, usoSubstancias, quantosAdultos, inicioUso, tratamentoDep, acessoInternet, localAcesso, tipoEquipamento, conteudoInternet, freqInternet, horasInternet, horasEletronicos, verifAcessos, freqVerifAcessos, usamBatePapo, sozinhas, tempoPai, tempoMae, outroResp, disciplina, paisSeparados, gravidezAdol, idadeAdolGrav, vidaEmRisco, acaoVR, conversaSex, conversaDrogas, conversaViolencia, probDrogas, abortoInduzido, violSexual, trabInfanto, bolsaFam, servConv, brasilSemFront, pronatec, minhaCMV, prouni, fies, outro) values('$data','$responsavel', '$zona','$bairro','$comunidade', '$tipoImovel', '$regOcupImovel', '$tipoConstr', '$abastAgua', '$tratamentoAgua', '$coletaEsgoto', '$destinoLixo', '$segPublica', '$numeroPessoas', '$constFamiliar', '$rendaFamilia', '$contribRendaFamiliar', '$carro','$moto', '$bicicleta', '$maqLavar', '$tanquinho', '$geladeira', '$lavLoucas', '$micOndas', '$fogGas', '$dvd', '$tv', '$apTvcabo', '$interBl', '$interCell', '$computador', '$notebook', '$tablet', '$som', '$telFxo', '$telCell', '$telCell12a', '$telCell18a', '$ventilador', '$arCondicionado', '$escolMae', '$escolPai', '$escolOutroResp', '$sitOcupMae', '$sitOcupPai', '$sitOcupOutro', '$penaJudicial', '$regimePena', '$responsavelPena', '$possuiDoenca', '$usoSubstancias', '$quantosAdultos', '$inicioUso', '$tratamentoDep', '$acessoInternet', '$localAcesso', '$tipoEquipamento', '$conteudoInternet', '$freqInternet', '$horasInternet', '$horasEletronicos', '$verifAcessos', '$freqVerifAcessos', '$usamBatePapo', '$sozinhas', '$tempoPai', '$tempoMae', '$outroResp', '$disciplina', '$paisSeparados', '$gravidezAdol', '$idadeAdolGrav', '$vidaEmRisco', '$acaoVR', '$conversaSex', '$conversaDrogas', '$conversaViolencia', '$probDrogas', '$abortoInduzido', '$violSexual', '$trabInfanto', '$bolsaFam', '$servConv', '$brasilSemFront', '$pronatec', '$minhaCMV', '$prouni', '$fies', '$outro')";
 $count = $con->exec($sql);
 $rows = $con->query("select count(*) from aluno")->fetchColumn();
 
