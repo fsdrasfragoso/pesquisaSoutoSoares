@@ -16,7 +16,7 @@ class Conexao
     public  $dbcon;
     
     
-    // Método construtor ajus
+    // Método construtor
     function __construct()
     {
         $this->Open();
