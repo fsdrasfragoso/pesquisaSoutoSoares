@@ -1,0 +1,57 @@
+body{
+    margin:0;
+    padding:0;
+    outline:none;
+    font-family:"Calibri";
+    
+}
+.txt{
+    height:35px;
+    width:150px;
+    border: none;
+    border-radius: 5px;
+    background-color: #EEE;
+}
+#cad_table{
+		position:absolute;
+		left:50%;
+		top:50%;
+		margin-left:-110px;
+		margin-top:-40px;
+		}
+
+#btnEntrar {
+    width: 100px;
+    height: 30px;
+    background-color: #EFEFEF;
+    border-radius: 4px;
+    border: 1px solid #CCC;
+}body{
+    margin:0;
+    padding:0;
+    outline:none;
+    font-family:"Calibri";
+    
+}
+.txt{
+    height:35px;
+    width:150px;
+    border: none;
+    border-radius: 5px;
+    background-color: #EEE;
+}
+#cad_table{
+		position:absolute;
+		left:50%;
+		top:50%;
+		margin-left:-110px;
+		margin-top:-40px;
+		}
+
+#btnEntrar {
+    width: 100px;
+    height: 30px;
+    background-color: #EFEFEF;
+    border-radius: 4px;
+    border: 1px solid #CCC;
+}
