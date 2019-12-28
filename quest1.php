@@ -196,6 +196,10 @@ function verificaInternet(value) {
 							<option value="Segredo">55 - Segredo</option>
 							<option value="Sitio Novo">56 - Sitio Novo</option>
 							<option value="Valentim">57 - Valentim</option>
+							<option value="Velho Chico">58 - Velho Chico</option>
+
+							<option value="Xavier">59 - Xavier</option>
+	
 						</select>
 					</div>
 					<div class = "form-row">
