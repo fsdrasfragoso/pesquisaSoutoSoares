@@ -185,485 +185,146 @@ function verificaInternet(value) {
 						</div>
 
 					<div class="form-group col-md-3">
-						<span class = "label label-warning">8 - Como o(a) Sr(a) avalia a qualidade da segurança pública no seu bairo?</span>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="segPublica" id="segPublica1" value="Otima">
-								<label class="form-check-label" for="segPublica1">
-									1. Ótima
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="segPublica" id="segPublica2" value="Boa">
-								<label class="form-check-label" for="segPublica2">
-									2. Boa
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="segPublica" id="segPublica3" value="Regular">
-								<label class="form-check-label" for="segPublica3">
-									3. Regular
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="segPublica" id="segPublica4" value="Ruim">
-								<label class="form-check-label" for="segPublica4">
-									4. Ruim
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="segPublica" id="segPublica5" value="Sem Resposta" checked>
-								<label class="form-check-label" for="segPublica5">
-									5. Sem Resposta
-								</label>
-							</div>
-	
-					
-					</div>
-
-
-					
+                    <label> Avaliação da Segurança Publica do Bairro.</label>
+                        <input class="form-check-input" type="checkbox" name="campo[]" value="segPublica">
 			</div>
 
 			</div>
-			<div class = "form-row">
-						<div class="form-group col-md-12 bg-primary text-white">
-						<h1><b>Perfil da Família - Questões de 9 a 12</b></h1>
-						</div>
+			
 
 					</div>
 					<div class = "form-row">
 						<div class="form-group col-md-3">
-							<span class = "label label-warning">9 - Número de Pessoas residentes no domicílio</span>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="numeroPessoas" id="numeroPessoas1" value="1">
-								<label class="form-check-label" for="numeroPessoas1">
-									1
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="numeroPessoas" id="numeroPessoas2" value="2">
-								<label class="form-check-label" for="numeroPessoas2">
-									2
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="numeroPessoas" id="numeroPessoas3" value="3">
-								<label class="form-check-label" for="numeroPessoas3">
-									3
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="numeroPessoas" id="numeroPessoas4" value="4">
-								<label class="form-check-label" for="numeroPessoas4">
-									4
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="numeroPessoas" id="numeroPessoas5" value="5">
-								<label class="form-check-label" for="numeroPessoas5">
-									5
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="numeroPessoas" id="numeroPessoas6" value="6">
-								<label class="form-check-label" for="numeroPessoas6">
-									6
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="numeroPessoas" id="numeroPessoas7" value="7">
-								<label class="form-check-label" for="numeroPessoas7">
-									7
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="numeroPessoas" id="numeroPessoas8" value="8">
-								<label class="form-check-label" for="numeroPessoas8">
-									8
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="numeroPessoas" id="numeroPessoas9" value="9">
-								<label class="form-check-label" for="numeroPessoas9">
-									9
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="numeroPessoas" id="numeroPessoas10" value="10">
-								<label class="form-check-label" for="numeroPessoas10">
-									10
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="numeroPessoas" id="numeroPessoas11" value="11">
-								<label class="form-check-label" for="numeroPessoas11">
-									11
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="numeroPessoas" id="numeroPessoas12" value="12">
-								<label class="form-check-label" for="numeroPessoas12">
-									12
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="numeroPessoas" id="numeroPessoas13" value="Mais de 12">
-								<label class="form-check-label" for="numeroPessoas13">
-									Mais de 12
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="numeroPessoas" id="numeroPessoas14" value="Sem Resposta" checked>
-								<label class="form-check-label" for="numeroPessoas14">
-									Sem resposta
-								</label>
-							</div>
+                        <label>Número de Pessoas residentes no domicílio.</label>
+                        <input class="form-check-input" type="checkbox" name="campo[]" value="numeroPessoas">
 						</div>
 						
 						<div class="form-group col-md-3">
-								<span class = "label label-warning">10 - Constituição familiar</span>							<div class="form-check">
-								<input class="form-check-input" type="radio" name="constFamiliar" id="constFamiliar1" value="Pai, mãe e filho(s)">
-								<label class="form-check-label" for="constFamiliar1">
-									1. Pai, mãe e filho(s)  
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="constFamiliar" id="constFamiliar2" value="Pai e filho(s)">
-								<label class="form-check-label" for="constFamiliar2">
-									2. Pai e filho(s) 
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="constFamiliar" id="constFamiliar3" value="Mãe e filho(s) ">
-								<label class="form-check-label" for="constFamiliar3">
-									3. Mãe e filho(s) 
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="constFamiliar" id="constFamiliar4" value="Mãe, Padrasto e filho(s)">
-								<label class="form-check-label" for="constFamiliar4">
-									4. Mãe, Padrasto e filho(s) 
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="constFamiliar" id="constFamiliar5" value="Pai, Madrasta e filho(s)">
-								<label class="form-check-label" for="constFamiliar5">
-									5. Pai, Madrasta e filho(s) 
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="constFamiliar" id="constFamiliar6" value="Pai, mãe, filho(s) e avós, tio">
-								<label class="form-check-label" for="constFamiliar6">
-									6. Pai, mãe, filho(s) e avós, tio 
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="constFamiliar" id="constFamiliar7" value="Mãe, Madrasta e filho(s)">
-								<label class="form-check-label" for="constFamiliar7">
-									7. Mãe, Madrasta e filho(s) 
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="constFamiliar" id="constFamiliar8" value="Pai, Padrasto e filho(s)">
-								<label class="form-check-label" for="constFamiliar8">
-									8. Pai, Padrasto e filho(s) 
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="constFamiliar" id="constFamiliar9" value="Outro">
-								<label class="form-check-label" for="constFamiliar9">
-									9. Outro 
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="constFamiliar" id="constFamiliar10" value="Sem Resposta" checked>
-								<label class="form-check-label" for="constFamiliar10">
-									10. Sem Resposta 
-								</label>
-							</div>
-
+                        <label>Constituição familiar.</label>
+                        <input class="form-check-input" type="checkbox" name="campo[]" value="constFamiliar">
 						</div>
 
 						<!-- Inicio Questao 3 -->						
 						<div class="form-group col-md-3">
-						<span class = "label label-warning">11 - Qual é a renda total de sua família por mês</span>
-							
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="rendaFamilia" id="rendaFamilia1" value="Ate 1 SM" >
-								<label class="form-check-label" for="rendaFamilia1">
-									1. Até 1 SM  
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="rendaFamilia" id="rendaFamilia2" value="+ de 1 a 2 SM">
-								<label class="form-check-label" for="rendaFamilia2">
-									2. + de 1 a 2 SM 
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="rendaFamilia" id="rendaFamilia3" value="+ de 2 a 3 SM ">
-								<label class="form-check-label" for="rendaFamilia3">
-									3. + de 2 a 3 SM 
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="rendaFamilia" id="rendaFamilia4" value="+ de 3 a 5 SM ">
-								<label class="form-check-label" for="rendaFamilia4">
-									4. + de 3 a 5 SM    
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="rendaFamilia" id="rendaFamilia5" value="+ de 5 a 10 SM">
-								<label class="form-check-label" for="rendaFamilia5">
-									5. + de 5 a 10 SM
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="rendaFamilia" id="rendaFamilia6" value="+ de 10 SM">
-								<label class="form-check-label" for="rendaFamilia6">
-									6. + de 10 SM  
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="rendaFamilia" id="rendaFamilia7" value="Sem Resposta" checked>
-								<label class="form-check-label" for="rendaFamilia7">
-									7.Sem Resposta 
-								</label>
-							</div>
-
+						<label>Qual é a renda total de sua família por mês.</label>
+                        <input class="form-check-input" type="checkbox" name="campo[]" value="rendaFamilia">
 						</div>
 
 						<!-- Final questao 3 -->
 						<!-- inicio questao 4 -->
 						<div class="form-group col-md-3">
-							<span class = "label label-warning">12 - Quem contribui para a renda familiar?</span>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="contribRendaFamiliar" id="contribRendaFamiliar1" value="Somente o Pai/Padrasto" >
-								<label class="form-check-label" for="constFamiliar1">
-									1. Somente o Pai/Padrasto   
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="contribRendaFamiliar" id="contribRendaFamiliar2" value="Somente a Mãe/Madrasta">
-								<label class="form-check-label" for="contribRendaFamiliar2">
-									2. Somente a Mãe/Madrasta 
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="contribRendaFamiliar" id="contribRendaFamiliar3" value="Somente os Filhos">
-								<label class="form-check-label" for="contribRendaFamiliar3">
-									3.  Somente os Filhos 
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="contribRendaFamiliar" id="contribRendaFamiliar4" value="Mãe/Madrasta e Pai/Padrasto">
-								<label class="form-check-label" for="contribRendaFamiliar4">
-									4. Mãe/Madrasta e Pai/Padrasto   
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="contribRendaFamiliar" id="contribRendaFamiliar5" value="Mãe, Pai e Filho(s)">
-								<label class="form-check-label" for="contribRendaFamiliar5">
-									5. Mãe, Pai e Filho(s)
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="contribRendaFamiliar" id="contribRendaFamiliar6" value="Pais e Avósa">
-								<label class="form-check-label" for="contribRendaFamiliar6">
-									6. Pais e Avós   
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="contribRendaFamiliar" id="contribRendaFamiliar7" value="Avós">
-								<label class="form-check-label" for="contribRendaFamiliar7">
-									7.Avós   
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="contribRendaFamiliar" id="contribRendaFamiliar8" value="Tia/o(s) ">
-								<label class="form-check-label" for="contribRendaFamiliar8">
-									8.Tia/o(s)   
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="contribRendaFamiliar" id="contribRendaFamiliar9" value="Outro ">
-								<label class="form-check-label" for="contribRendaFamiliar9">
-									9.Outro   
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="contribRendaFamiliar" id="contribRendaFamiliar10" value="Sem Resposta" checked>
-								<label class="form-check-label for contribRendaFamiliar10"> 
-									10.Sem Resposta   
-								</label>
-							</div>
-
-		
+                        <label>Quem contribui para a renda familiar.</label>
+                        <input class="form-check-input" type="checkbox" name="campo[]" value="contribRendaFamiliar">
 						</div>
 												
 						<!-- final questao 4 -->						
 
 					</div>
-			<div class = "form-row">
-						<div class="form-group col-md-12 bg-primary text-white">
-						<h1><b>BENS DE CONSUMO - Questões de 14 a 37</b></h1>
-						</div>
-
+			
 			</div>
 			<div class="form-row">
 					<div class="form-group col-md-1">
 						<label class = "control-label small">14 - Carro</label>
-						<input class="form-control" type="number" name="carro" value="0" maxlength = "2"  required>
-					</div>
+                        <input class="form-check-input" type="checkbox" name="campo[]" value="carro">					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">15 - Moto</label>
-						<input class="form-control" type="number" name="moto" value="0" maxlength = "2" required>
-					</div>
+                        <input class="form-check-input" type="checkbox" name="campo[]" value="moto">					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">16 - Bicicl.</label>
-						<input class="form-control" type="number" name="bicicleta" value="0" maxlength = "2" required>
-					</div>
+                        <input class="form-check-input" type="checkbox" name="campo[]" value="bicicleta">					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">17-Mq.Lav.</label>
-						<input class="form-control" type="number" name="maqLavar" value="0" maxlength = "2" required>
+                        <input class="form-check-input" type="checkbox" name="campo[]" value="maqLavar">	
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">18-Tanqui.</label>
-						<input class="form-control" type="number" name="tanquinho" value="0" maxlength = "2" required>
-					</div>
+                        <input class="form-check-input" type="checkbox" name="campo[]" value="tanquinho">					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">19-Gelad.</label>
-						<input class="form-control" type="number" name="geladeira" value="0" maxlength = "2" required>
-					</div>
+                        <input class="form-check-input" type="checkbox" name="campo[]" value="geladeira">					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">20-L.Louç.</label>
-						<input class="form-control" type="number" name="lavLoucas" value="0" maxlength = "2" required>
+                        <input class="form-check-input" type="checkbox" name="campo[]" value="lavLoucas">					</div>
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">21-M.Onda</label>
-						<input class="form-control" type="number" name="micOndas" value="0" maxlength = "2" required>
+						<input class="form-check-input" type="checkbox" name="campo[]" value="micOndas">
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">22-F.Gás</label>
-						<input class="form-control" type="number" name="fogGas" value="0" maxlength = "2" required>
+						<input class="form-check-input" type="checkbox" name="campo[]" value="fogGas">
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">23-DVD</label>
-						<input class="form-control" type="number" name="dvd" value="0" maxlength = "2" required>
+						<input class="form-check-input" type="checkbox" name="campo[]" value="dvd">
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">24-TV</label>
-						<input class="form-control" type="number" name="tv" value="0" maxlength = "2" required>
+						<input class="form-check-input" type="checkbox" name="campo[]" value="tv">
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">25-par/tvcb</label>
-						<input class="form-control" type="number" name="apTvcabo" value="0" maxlength = "2" required>
-					</div>
+                        <input class="form-check-input" type="checkbox" name="campo[]" value="apTvcabo">					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">26-inter.BL</label>
-						<input class="form-control" type="number" name="interBl" value="0" maxlength = "2" required>
+                        <input class="form-check-input" type="checkbox" name="campo[]" value="interBl">
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">27-interCel</label>
-						<input class="form-control" type="number" name="interCell" value="0" maxlength = "2" required>
-					</div>
+                        <input class="form-check-input" type="checkbox" name="campo[]" value="interCell">					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">28-comput.</label>
-						<input class="form-control" type="number" name="computador" value="0" maxlength = "2" required>
-					</div>
+                        <input class="form-check-input" type="checkbox" name="campo[]" value="computador">					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">29-Noteb.</label>
-						<input class="form-control" type="number" name="notebook" value="0" maxlength = "2" required>
+                        <input class="form-check-input" type="checkbox" name="campo[]" value="notebook">
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">30-Tablet</label>
-						<input class="form-control" type="number" name="tablet" value="0" maxlength = "2" required>
+                        <input class="form-check-input" type="checkbox" name="campo[]" value="tablet">
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">31-Som</label>
-						<input class="form-control" type="number" name="som" value="0" maxlength = "2" required>
+                        <input class="form-check-input" type="checkbox" name="campo[]" value="som">
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">32-TelFxo</label>
-						<input class="form-control" type="number" name="telFxo" value="0" maxlength = "2" required>
+                        <input class="form-check-input" type="checkbox" name="campo[]" value="telFxo">
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">33-TelCell</label>
-						<input class="form-control" type="number" name="telCell" value="0" maxlength = "2" required>
+						<input class="form-check-input" type="checkbox" name="campo[]" value="telCell">
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">34-TCel12a</label>
-						<input class="form-control" type="number" name="telCell12a" value="0" maxlength = "2" required>
+						<input class="form-check-input" type="checkbox" name="campo[]" value="telCell12a">
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">35-TCel18a</label>
-						<input class="form-control" type="number" name="telCell18a" value="0" maxlength = "2" required>
+						<input class="form-check-input" type="checkbox" name="campo[]" value="telCell18a">
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">36-Ventil.</label>
-						<input class="form-control" type="number" name="ventilador" value="0" maxlength = "2" required>
+						<input class="form-check-input" type="checkbox" name="campo[]" value="ventilador">
 					</div>
 					<div class="form-group col-md-1">
 						<label class = "control-label small">37-ArCond.</label>
-						<input class="form-control" type="number" name="arCondicionado" value="0" maxlength = "2" required>
+						<input class="form-check-input" type="checkbox" name="campo[]" value="arCondicionado">
 					</div>
-			<div class = "form-row">
-						<div class="form-group col-md-12 bg-primary text-white">
-						<h1><b>Sobre os pais/responsaveis - Questoes de 38 a 55</b></h1>
-						</div>
-
+		
 			</div>
 			<div class = "form-row">
 				<div class="form-group col-md-2">
-						<span class = "label label-warning">38 - Escol. Mãe / Madastra</span>
-						<select class="form-control" name="escolMae" id = "escolMae" >
-							<option selected>Escolha uma Opção...</option>
-							<option value="Analfabeto">1 - Analfabeto</option>
-							<option value="Ensino Fundamental Incompleto">2 - Ensino Fundamental Incompleto</option>
-							<option value="Ensino Fundamental Completo">3 - Ensino Fundamental Completo</option>
-							<option value="Ensino Medio Incompleto">4 - Ensino Médio Incompleto</option>
-							<option value="Ensino Medio Completo">5 - Ensino Médio Completo</option>
-							<option value="Ensino Superior Incompleto">6 - Ensino Superior Incompleto</option>
-							<option value="Ensino Superior Completo">7 - Ensino Superior Completo</option>
-							<option value="Outro">8 - Outro</option>
-							<option value="Sem Resposta">9 - Sem Resposta</option>
-
-
-						</select>
+                <label class = "control-label small"> Escol. Mãe / Madastra.</label>
+						<input class="form-check-input" type="checkbox" name="campo[]" value="escolMae">
 				</div>
 				<div class="form-group col-md-2">
-						<span class = "label label-warning">39 - Escol. Pai / Padastro</span>
-						<select class="form-control" name="escolPai" id = "escolPai" >
-							<option selected>Escolha uma Opção...</option>
-							<option value="Analfabeto">1 - Analfabeto</option>
-							<option value="Ensino Fundamental Incompleto">2 - Ensino Fundamental Incompleto</option>
-							<option value="Ensino Fundamental Completo">3 - Ensino Fundamental Completo</option>
-							<option value="Ensino Medio Incompleto">4 - Ensino Médio Incompleto</option>
-							<option value="Ensino Medio Completo">5 - Ensino Médio Completo</option>
-							<option value="Ensino Superior Incompleto">6 - Ensino Superior Incompleto</option>
-							<option value="Ensino Superior Completo">7 - Ensino Superior Completo</option>
-							<option value="Outro">8 - Outro</option>
-							<option value="Sem Resposta">9 - Sem Resposta</option>
-
-
-						</select>
+                <label class = "control-label small"> Escol. Pai / Padastro.</label>
+						<input class="form-check-input" type="checkbox" name="campo[]" value="escolPai">
 				</div>
 				<div class="form-group col-md-2">
-						<span class = "label label-warning">40 - Escol. Outro Responsável</span>
-						<select class="form-control" name="escolOutroResp" id = "escolOutroResp" >
-							<option selected>Escolha uma Opção...</option>
-							<option value="Analfabeto">1 - Analfabeto</option>
-							<option value="Ensino Fundamental Incompleto">2 - Ensino Fundamental Incompleto</option>
-							<option value="Ensino Fundamental Completo">3 - Ensino Fundamental Completo</option>
-							<option value="Ensino Medio Incompleto">4 - Ensino Médio Incompleto</option>
-							<option value="Ensino Medio Completo">5 - Ensino Médio Completo</option>
-							<option value="Ensino Superior Incompleto">6 - Ensino Superior Incompleto</option>
-							<option value="Ensino Superior Completo">7 - Ensino Superior Completo</option>
-							<option value="Outro">8 - Outro</option>
-							<option value="Sem Resposta">9 - Sem Resposta</option>
-
-
-						</select>
+                <label class = "control-label small"> Escol. Pai / Padastro.</label>
+						<input class="form-check-input" type="checkbox" name="campo[]" value="escolOutroResp">
 				</div>
 				<div class="form-group col-md-2">
 						<span class = "label label-info">41 - Sit. Ocup. Mãe / Madastra</span>
