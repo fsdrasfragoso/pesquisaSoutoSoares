@@ -2,7 +2,9 @@
     date_default_timezone_set('America/Sao_Paulo');
     ini_set('default_charset', 'UTF-8');
     $date = date('d-m-Y H:i');
-    include('classes/Bairro.class.php');    
+    include('classes/DB.class.php');   
+    include('classes/Bairro.class.php');  
+    include('classes/Comunidade.class.php');    
 
 ?>
 <!DOCTYPE html>
@@ -695,12 +697,23 @@ function verificaInternet(value) {
 						</select>
 				</div>            
 				<div class="form-group col-md-3">
-						<span class = "label label-info"> Bairro </span>
+						<span class = "label label-info"> Filtrar por Bairro </span>
 						<select class="form-control" name="abortoInduzido" id = "abortoInduzido"  required>
 							<option selected value="0">Todos os bairros</option>							
                             <?php 
                                 foreach(Bairro::bairros() as $bairro){
                                          echo "<option value='".$bairro['bairro']."'>".$bairro['bairro']."</option>";
+                                } 
+                            ?>
+						</select>
+				</div>
+                <div class="form-group col-md-3">
+						<span class = "label label-info"> Filtrar por Comunidade </span>
+						<select class="form-control" name="abortoInduzido" id = "abortoInduzido"  required>
+							<option selected value="0">Todas as Comunidades</option>							
+                            <?php 
+                                foreach(Comunidade::comunidades() as $comunidade){
+                                         echo "<option value='".$comunidade['comunidade']."'>".$comunidade['comunidade']."</option>";
                                 } 
                             ?>
 						</select>

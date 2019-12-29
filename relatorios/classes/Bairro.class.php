@@ -1,5 +1,4 @@
 <?php 
-include('DB.class.php');
 class Bairro{
 
     static function bairros(){
