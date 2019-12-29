@@ -1,7 +1,7 @@
 <?php
 	class DB{
 		private static $conn;
-		private static $host = '191.252.102.127';
+		private static $host = 'localhost';
 		private static $usuario = 'admin';
 		private static $senha = '556459';
 		private static $banco = 'dbpesquisa';

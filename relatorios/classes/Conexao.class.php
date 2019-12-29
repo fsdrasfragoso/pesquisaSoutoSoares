@@ -9,8 +9,8 @@
 class Conexao
 {
 
-   // private $host = 'localhost';
-    private $host = '191.252.102.127';
+    private $host = 'localhost';
+   // private $host = '191.252.102.127';
     private $usuario = 'admin';
     private $senha = '556459';
     private $banco = 'dbpesquisa';
