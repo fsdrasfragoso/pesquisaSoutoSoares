@@ -1,7 +1,9 @@
 <?php
-date_default_timezone_set('America/Sao_Paulo');
-ini_set('default_charset', 'UTF-8');
-$date = date('d-m-Y H:i');
+    date_default_timezone_set('America/Sao_Paulo');
+    ini_set('default_charset', 'UTF-8');
+    $date = date('d-m-Y H:i');
+    include('classes/Bairro.class.php');    
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -682,7 +684,28 @@ function verificaInternet(value) {
 						</div>
 
 			</div>
-
+            <div class = "form-row">
+				<div class="form-group col-md-3">
+						<span class = "label label-info">Filtrar por Zona</span>
+						<select class="form-control" name="zona" id ="zona"  required>
+							<option selected valeu="0">Todas as Zonas</option>
+							<option value="Rural">Rural</option>
+							<option value="Urbana">Urbana</option>					
+							
+						</select>
+				</div>            
+				<div class="form-group col-md-3">
+						<span class = "label label-info"> Bairro </span>
+						<select class="form-control" name="abortoInduzido" id = "abortoInduzido"  required>
+							<option selected value="0">Todos os bairros</option>							
+                            <?php 
+                                foreach(Bairro::bairros() as $bairro){
+                                         echo "<option value='".$bairro['bairro']."'>".$bairro['bairro']."</option>";
+                                } 
+                            ?>
+						</select>
+				</div>
+                </div>
 
 
 
