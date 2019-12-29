@@ -9,14 +9,15 @@
 class Conexao
 {
 
-    private $host = 'localhost';
+   // private $host = 'localhost';
+    private $host = '191.252.102.127';
     private $usuario = 'admin';
     private $senha = '556459';
     private $banco = 'dbpesquisa';
     public  $dbcon;
     
     
-    // Método construtor dfdfdfdfdfdfd sdsd
+    // Método construtor 
     function __construct()
     {
         $this->Open();
