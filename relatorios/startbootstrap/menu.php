@@ -1,3 +1,5 @@
+<?php include('../classes/DB.class.php')?>
+<?php include('../classes/Relatorio.class.php')?>
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
@@ -66,7 +68,7 @@
         Addons
       </div>
 
-      <!-- Nav Item - Pages Collapse Menu -->
+      <!-- Nav Item - Pages Collapse Menu 
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-folder"></i>
@@ -84,7 +86,7 @@
             <a class="collapse-item" href="blank.html">Blank Page</a>
           </div>
         </div>
-      </li>
+      </li> -->
 
       <!-- Nav Item - Charts -->
       <li class="nav-item">
@@ -92,12 +94,23 @@
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Charts</span></a>
       </li>
-
+      
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="tables.php">
+        <a class="nav-link collapsed" href="#"  data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
+          <span>Relatórios</span></a>
+          <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Lista de Relatórios:</h6>
+            <?php 
+              $relatorios = Relatorio::getRelatorios();
+              foreach($relatorios as $res){?>
+                <a class="collapse-item" href="tables.php?id=<?php echo $res[0] ?>"><?php print_r($res[1]); echo '<br/>'; ?></a>         
+              <?php } ?>
+                         
+          </div>
+        </div>
       </li>
 
       <!-- Divider -->
