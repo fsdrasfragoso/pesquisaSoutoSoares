@@ -110,7 +110,7 @@ function verificaInternet(value) {
 				<p>Atenção selecione os campos que vão compor o seu relatório</p>
 			</div>
 			<div class="agile-form">
-				<form action="insere.php" method="post">
+				<form action="guardaRelatorio.php" method="post">
 					<div class="form-row">
 					<div class="form-group col-md-2">
 						<label>Data e Hora</label>
@@ -691,7 +691,7 @@ function verificaInternet(value) {
 				<div class="form-group col-md-3">
 						<span class = "label label-info">Filtrar por Zona</span>
 						<select class="form-control" name="zona" id ="zona"  required>
-							<option selected valeu="0">Todas as Zonas</option>
+							<option selected value="0">Todas as Zonas</option>
 							<option value="Rural">Rural</option>
 							<option value="Urbana">Urbana</option>					
 							
@@ -744,7 +744,7 @@ function verificaInternet(value) {
                 
                 <div class="form-group col-md-3">
 						<span class = "label label-info"> Constituição familiar</span>
-						<select class="form-control" name="abortoInduzido" id = "abortoInduzido"  required>
+						<select class="form-control" name="constFamiliar" id = "constFamiliar"  required>
 							<option selected value="0">Não aplicar esse filtro</option>							
                             <?php 
                                 foreach(Relatorio::getContrituicaoFamiliar() as $constFamiliar){
@@ -763,16 +763,20 @@ function verificaInternet(value) {
                                 } 
                             ?>
 						</select>
-				</div>
+                </div>                
                 </div>
-
+           <div class="form-group col-md-3">
+           <label>Titulo do Relatório</label>
+			  <input class="form-control" type="text" name="tituloRelatorio" value="" required="">
+             
+           </div>
 
 
 		</div>	
 								
 			<div class = "form-row">
 					<div class="form-group col-md-12" align="center">
-					<button class="btn btn-default" type="submit" name="button">Enviar</button>
+					<button class="btn btn-default" type="submit" name="button">Cadastrar e Gerar Novo Relatório</button>
 					</div>
 				</div>
 

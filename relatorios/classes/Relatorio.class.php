@@ -104,4 +104,26 @@ class Relatorio{
     return $numeroPessoas; 
 
     }
+
+    static function setRelatorio($colunas,$where, $titulo){
+        $relatorio = "SELECT $colunas FROM aluno $where";
+        
+        $sql = 'INSERT INTO `relatorios`(
+            `nome_relatorio`, 
+            `query_relatorio`) 
+            VALUES (
+                 "'.$titulo.'", 
+                 "'.$relatorio.'");
+        ';
+         
+        $insert = DB::getConn()->prepare($sql);
+        $insert->execute();
+
+        $sql = "SELECT id_relatorio FROM relatorios ORDER BY id_relatorio DESC LIMIT 1"; 
+
+        $id_relatorio = DB::getConn()->prepare($sql);
+        $id_relatorio->execute();
+        
+        return $id_relatorio->fetchAll()[0]['id_relatorio']; 
+    }
 }
