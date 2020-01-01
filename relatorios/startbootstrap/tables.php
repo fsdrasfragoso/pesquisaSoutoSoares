@@ -57,10 +57,10 @@ $id = $_GET['id'];
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Dados do Relatorio</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Dados do Relatorio <input type="button" id="btnExport" value="Exporta relatório" /> </h6>
             </div>
             <div class="card-body">
-              <div class="table-responsive">
+              <div class="table-responsive" id="table">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
@@ -166,3 +166,32 @@ $id = $_GET['id'];
 </body>
 
 </html>
+<script>
+    $("#btnExport").click(function (e) {
+      $table = '<div id="dvData">'+
+        '<table>'+
+            '<tr>'+
+                "<?php 
+                          $colunas = Relatorio::getColunasById($id);
+                          $quantColunas = count($colunas); 
+                          for($i=0;$i<$quantColunas;$i++){                              
+                             echo '<th>'.$colunas[$i].'</th>';
+                          } 
+                     ?>"+
+            '</tr>'+
+            "<?php 
+                           $linhas = Relatorio::getRelatorioById($id);                          
+                           foreach($linhas as $linha){
+                             echo '<tr>';
+                             for($i=0;$i<$quantColunas;$i++){
+                               echo '<td>'.$linha[$i].'</td>';   
+                             }                                                
+                             echo '</tr>'; 
+                           }
+                    ?>"+           
+        '</table>'+
+    '</div>';
+        window.open('data:application/vnd.ms-excel,' + $table);
+        e.preventDefault();
+    });
+  </script>
