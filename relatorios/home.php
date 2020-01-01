@@ -19,7 +19,7 @@
             <section name='home'>
 		<p>Bem-vindo<b> <?php echo $_SESSION['nome']; ?>!</b><a href='logout.php'>Sair</a>
 </p>
-		
+<a class="btn btn-info" href="startbootstrap/index.php" >Painel de Relatório</a> <br/>  <br/>
             </section>
 	<div class="form-row">	
 		<div class="form-group col-md-1">
@@ -115,7 +115,7 @@
 
 		</div>
 
-	
+		
 
 	</div>
             <footer>

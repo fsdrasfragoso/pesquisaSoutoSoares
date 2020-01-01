@@ -53,5 +53,55 @@ class Relatorio{
         } 
       return $colunas;   
     }
+     
 
+    static function getRendaFamiliar(){
+        $sql = "SELECT rendaFamilia FROM aluno GROUP BY rendaFamilia;";
+        $select = DB::getConn()->prepare($sql); 
+        $select->execute(); 
+        $renda = $select->fetchAll();
+        return $renda; 
+    } 
+
+    static function getContribuiRendaFamiliar(){
+        $sql = "SELECT contribRendaFamiliar FROM aluno GROUP BY contribRendaFamiliar";
+        $select = DB::getConn()->prepare($sql); 
+        $select->execute(); 
+        $renda = $select->fetchAll();
+        return $renda; 
+    }
+    
+    static function getContrituicaoFamiliar(){
+        $sql = "SELECT constFamiliar FROM aluno GROUP BY constFamiliar;";
+        $select = DB::getConn()->prepare($sql); 
+        $select->execute(); 
+        $constFamiliar = $select->fetchAll();
+        return $constFamiliar; 
+    }
+    static function getNumeroPessoasCasa(){
+        $sql = "SELECT
+        CASE 
+         WHEN numeroPessoas = 1 THEN '01'
+         WHEN numeroPessoas = 2 THEN '02'
+         WHEN numeroPessoas = 3 THEN '03'
+         WHEN numeroPessoas = 4 THEN '04'
+         WHEN numeroPessoas = 5 THEN '05'
+         WHEN numeroPessoas = 6 THEN '06'
+         WHEN numeroPessoas = 7 THEN '07'
+         WHEN numeroPessoas = 8 THEN '08'
+         WHEN numeroPessoas = 9 THEN '09'
+      ELSE numeroPessoas END as numero_Pessoas 
+    FROM
+        aluno 
+    GROUP BY
+        numeroPessoas 
+    ORDER BY
+        1 ASC;";
+    
+    $select = DB::getConn()->prepare($sql); 
+    $select->execute(); 
+    $numeroPessoas = $select->fetchAll();
+    return $numeroPessoas; 
+
+    }
 }

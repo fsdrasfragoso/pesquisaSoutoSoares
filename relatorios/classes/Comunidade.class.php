@@ -8,5 +8,6 @@ class Comunidade{
         $comunidades = $select->fetchAll();
         return $comunidades; 
     }
+    
 
 }

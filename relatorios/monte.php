@@ -4,7 +4,8 @@
     $date = date('d-m-Y H:i');
     include('classes/DB.class.php');   
     include('classes/Bairro.class.php');  
-    include('classes/Comunidade.class.php');    
+    include('classes/Comunidade.class.php');   
+    include('classes/Relatorio.class.php') 
 
 ?>
 <!DOCTYPE html>
@@ -698,7 +699,7 @@ function verificaInternet(value) {
 				</div>            
 				<div class="form-group col-md-3">
 						<span class = "label label-info"> Filtrar por Bairro </span>
-						<select class="form-control" name="abortoInduzido" id = "abortoInduzido"  required>
+						<select class="form-control" name="bairro" id = "bairro"  required>
 							<option selected value="0">Todos os bairros</option>							
                             <?php 
                                 foreach(Bairro::bairros() as $bairro){
@@ -709,11 +710,56 @@ function verificaInternet(value) {
 				</div>
                 <div class="form-group col-md-3">
 						<span class = "label label-info"> Filtrar por Comunidade </span>
-						<select class="form-control" name="abortoInduzido" id = "abortoInduzido"  required>
+						<select class="form-control" name="comunidade" id = "comunidade"  required>
 							<option selected value="0">Todas as Comunidades</option>							
                             <?php 
                                 foreach(Comunidade::comunidades() as $comunidade){
                                          echo "<option value='".$comunidade['comunidade']."'>".$comunidade['comunidade']."</option>";
+                                } 
+                            ?>
+						</select>
+                </div> 
+                <div class="form-group col-md-3">
+						<span class = "label label-info"> Filtrar por Renda</span>
+						<select class="form-control" name="rendaFamilia" id = "rendaFamilia"  required>
+							<option selected value="0">Todos os tipos de Renda</option>							
+                            <?php 
+                                foreach(Relatorio::getRendaFamiliar() as $renda){
+                                         echo "<option value='".$renda['rendaFamilia']."'>".$renda['rendaFamilia']."</option>";
+                                } 
+                            ?>
+						</select>
+                </div>
+                <div class="form-group col-md-3">
+						<span class = "label label-info"> Quem contribui com a Renda Familiar</span>
+						<select class="form-control" name="contribRendaFamiliar" id = "contribRendaFamiliar"  required>
+							<option selected value="0">Não aplicar esse filtro</option>							
+                            <?php 
+                                foreach(Relatorio::getContribuiRendaFamiliar() as $renda){
+                                         echo "<option value='".$renda['contribRendaFamiliar']."'>".$renda['contribRendaFamiliar']."</option>";
+                                } 
+                            ?>
+						</select>
+                </div>
+                
+                <div class="form-group col-md-3">
+						<span class = "label label-info"> Constituição familiar</span>
+						<select class="form-control" name="abortoInduzido" id = "abortoInduzido"  required>
+							<option selected value="0">Não aplicar esse filtro</option>							
+                            <?php 
+                                foreach(Relatorio::getContrituicaoFamiliar() as $constFamiliar){
+                                         echo "<option value='".$constFamiliar['constFamiliar']."'>".$constFamiliar['constFamiliar']."</option>";
+                                } 
+                            ?>
+						</select>
+                </div>
+                <div class="form-group col-md-3">
+						<span class = "label label-info"> Número de Pessoas residentes no domicílio</span>
+						<select class="form-control" name="numero_Pessoas" id = "numero_Pessoas"  required>
+							<option selected value="0">Não aplicar esse filtro</option>							
+                            <?php 
+                                foreach(Relatorio::getNumeroPessoasCasa() as $numero_Pessoas){
+                                         echo "<option value='".$numero_Pessoas['numero_Pessoas']."'>".$numero_Pessoas['numero_Pessoas']."</option>";
                                 } 
                             ?>
 						</select>
