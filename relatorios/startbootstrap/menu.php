@@ -28,17 +28,22 @@
         Interface
       </div>
 
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-cog"></i>
-          <span>Components</span>
+     <!-- Nav Item - Pages Collapse Menu -->
+     <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Paginas</span>
         </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Components:</h6>
-            <a class="collapse-item" href="buttons.html">Buttons</a>
-            <a class="collapse-item" href="cards.html">Cards</a>
+            <h6 class="collapse-header">Pagina Inicial dos Relatórios</h6>
+            <a class="collapse-item" href="../home.php">Pagina Home</a>
+            <a class="collapse-item" href="../cadastro.php">Cadastro</a>
+            <a class="collapse-item" href="../dados.php">Geral</a>           
+            <a class="collapse-item" href="../urbanas.php">Urbanas</a>
+            <a class="collapse-item" href="../rurais.php">Rurais</a>
+            <a class="collapse-item" href="../bairros.php">Bairros</a>            
+            <a class="collapse-item" href="../segPub.php">Q. 8 - Seg. Pública</a>
           </div>
         </div>
       </li>
