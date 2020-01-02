@@ -19,8 +19,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- stylesheets -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="../css1/style.css">
+<!--	<link rel="stylesheet" href="../css1/bootstrap.css"> -->
 <!-- Última versão CSS compilada e minificada -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -677,7 +677,7 @@ function verificaInternet(value) {
 				</div>
                 <div class="form-group col-md-3">					
 						<label> Selecionar todos os campos</label>
-						<input class="form-check-input" type="checkbox" name="campo[]" value="*">
+						<input class="form-check-input" type="checkbox" id="todos" name="campo[]" value="*">
 				</div>
 	
 			</div>
@@ -791,3 +791,13 @@ function verificaInternet(value) {
 	</div>
 </body>
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function () {
+        $("#todos").click(function () {
+            $(":checkbox").attr('checked', this.checked);
+            alert('Você selecionou todos os campos do registro');
+        });
+    });
+
+</script>
