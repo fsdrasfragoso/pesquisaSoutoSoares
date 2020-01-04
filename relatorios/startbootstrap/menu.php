@@ -108,9 +108,11 @@
           <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
           
-          <h6 class="collapse-header">Lista de Relatórios:</h6>
+          <h6 class="collapse-header">Criar Relatorio:</h6>
             <a class="collapse-item" href="../monte.php">Criar Novo Relatorio - Perfil da Família
           </a>
+          <a class="collapse-item" href="relatorioAdolecente.php">Criar Relatorio Adolescente </a> 
+          <h6 class="collapse-header">Lista de Relatórios:</h6>
             <?php 
               $relatorios = Relatorio::getRelatorios();
               foreach($relatorios as $res){?>

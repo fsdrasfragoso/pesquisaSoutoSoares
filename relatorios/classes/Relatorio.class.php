@@ -53,8 +53,23 @@ class Relatorio{
         } 
       return $colunas;   
     }
-     
+    
+    static function getColunasQuest2(){
+        
+        $sql = "DESC quest2;"; 
+        $select = DB::getConn()->prepare($sql); 
+        $select->execute();
 
+        $resgistros = $select->fetchAll();
+        return $resgistros;
+    }
+    static function getOptions($coluna){
+        $sql = "SELECT $coluna FROM quest2  WHERE $coluna <> '' GROUP BY $coluna;";        
+        $select = DB::getConn()->prepare($sql); 
+        $select->execute(); 
+        $options = $select->fetchAll();
+        return $options; 
+    }
     static function getRendaFamiliar(){
         $sql = "SELECT rendaFamilia FROM aluno GROUP BY rendaFamilia;";
         $select = DB::getConn()->prepare($sql); 
@@ -107,6 +122,28 @@ class Relatorio{
 
     static function setRelatorio($colunas,$where, $titulo){
         $relatorio = "SELECT $colunas FROM aluno $where";
+        
+        $sql = 'INSERT INTO `relatorios`(
+            `nome_relatorio`, 
+            `query_relatorio`) 
+            VALUES (
+                 "'.$titulo.'", 
+                 "'.$relatorio.'");
+        ';
+         
+        $insert = DB::getConn()->prepare($sql);
+        $insert->execute();
+
+        $sql = "SELECT id_relatorio FROM relatorios ORDER BY id_relatorio DESC LIMIT 1"; 
+
+        $id_relatorio = DB::getConn()->prepare($sql);
+        $id_relatorio->execute();
+        
+        return $id_relatorio->fetchAll()[0]['id_relatorio']; 
+    }
+
+    static function setRelatorioQuest2($colunas,$where, $titulo){
+        $relatorio = "SELECT $colunas FROM  quest2 $where";
         
         $sql = 'INSERT INTO `relatorios`(
             `nome_relatorio`, 
