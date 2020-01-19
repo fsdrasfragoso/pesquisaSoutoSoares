@@ -141,6 +141,25 @@ class Relatorio{
         
         return $id_relatorio->fetchAll()[0]['id_relatorio']; 
     }
+    
+    static function getTodosRelatorios(){
+        $sql = "SELECT id_relatorio, nome_relatorio FROM relatorios;";
+        $select = DB::getConn()->prepare($sql); 
+        $select->execute(); 
+        $relatorios = $select->fetchAll();
+        return $relatorios; 
+    }
+
+    static function excluirRelatorio($id_relatorio){
+        if(!empty($id_relatorio)){ 
+        $sql = "DELETE FROM relatorios WHERE id_relatorio = $id_relatorio";
+        $delete = DB::getConn()->prepare($sql); 
+        $delete->execute(); 
+        return 'deletado'; 
+        }else{
+            return 'registro invalido'; 
+        }
+    }
 
     static function setRelatorioQuest2($colunas,$where, $titulo){
         $relatorio = "SELECT $colunas FROM  quest2 $where";
