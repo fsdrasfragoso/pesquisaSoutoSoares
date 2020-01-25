@@ -160,6 +160,42 @@ class Relatorio{
             return 'registro invalido'; 
         }
     }
+      
+    static function setRelatorioPorcentagem($campo,$AND,$titulo,$c){
+         $relatorio = "
+         SELECT
+           count(q.$campo) as quantidade,
+             count( q.$campo) / (SELECT count(*)FROM quest2)  * 100 AS porcentagem,
+             q.$campo,
+             q.$c            
+         FROM
+             quest2 as q 
+         WHERE
+          q.$campo IS NOT NULL
+          AND q.$campo <> ''          
+          $AND
+         GROUP BY
+             q.$campo;";
+        
+        
+        $sql = 'INSERT INTO `relatorios`(
+                `nome_relatorio`, 
+                `query_relatorio`) 
+                VALUES (
+                     "'.$titulo.'", 
+                     "'.$relatorio.'");
+            ';
+             
+            $insert = DB::getConn()->prepare($sql);
+            $insert->execute();
+    
+            $sql = "SELECT id_relatorio FROM relatorios ORDER BY id_relatorio DESC LIMIT 1"; 
+    
+            $id_relatorio = DB::getConn()->prepare($sql);
+            $id_relatorio->execute();
+            
+            return $id_relatorio->fetchAll()[0]['id_relatorio'];  
+    }  
 
     static function setRelatorioQuest2($colunas,$where, $titulo){
         $relatorio = "SELECT $colunas FROM  quest2 $where";
