@@ -109,6 +109,7 @@
             <a class="collapse-item" href="../monte.php">Criar Novo Relatorio - Perfil da Família
           </a>
           <a class="collapse-item" href="relatorioAdolecente.php">Criar Relatorio Adolescente </a> 
+          <a class="collapse-item" href="../relatorioporcentagem.php">Criar Relatorio de Porcentagem </a> 
           <h6 class="collapse-header">Lista de Relatórios:</h6>
             <?php 
               $relatorios = Relatorio::getRelatorios();
