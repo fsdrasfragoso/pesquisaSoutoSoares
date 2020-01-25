@@ -10,7 +10,7 @@ $i = 0;
 foreach(Relatorio::getColunasQuest2() as $coluna){
     if($_POST[$coluna['Field']] != '0'){
         if($i==0){
-            $coluna .=","; 
+            $c .= ","; 
             $i++;
         }
         $i++; 
