@@ -100,7 +100,7 @@ function verificaInternet(value) {
 	<div class="w3ls-banner">
 	<div class="heading">
 		<div>
-			<img src="../../logoSoutoSoares.png">
+			<img src="../logoSoutoSoares.png">
 		</div>
 		<h1>Monte o Seu Relatório</h1>
 	</div>
