@@ -166,8 +166,8 @@ class Relatorio{
          SELECT
            count(q.$campo) as quantidade,
              count( q.$campo) / (SELECT count(*)FROM quest2)  * 100 AS porcentagem,
-             q.$campo,
-             q.$c            
+             q.$campo
+             $c            
          FROM
              quest2 as q 
          WHERE

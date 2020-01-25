@@ -6,13 +6,20 @@ if(!empty($titulo)){
 $campo = $_POST['campo'];
 $AND = '';
 $c = '';
+$i = 0;
 foreach(Relatorio::getColunasQuest2() as $coluna){
     if($_POST[$coluna['Field']] != '0'){
-       
+        if($i==0){
+            $AND .=","; 
+            $i++;
+        }
+        $i++; 
         $AND .= "AND ".$coluna['Field']." = '".$_POST[$coluna['Field']]."'"; 
         $c .= $coluna['Field'].',';
     }
-      $c1 = substr($c, 0, -1);
+ 
+    $c1 = substr($c, 0, -1);
+    
 }
 
 $id_relatorio = Relatorio::setRelatorioPorcentagem($campo,$AND,$titulo,$c1);
